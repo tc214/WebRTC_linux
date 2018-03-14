@@ -1,0 +1,63 @@
+defines = -DV8_DEPRECATION_WARNINGS -DNO_TCMALLOC -DSAFE_BROWSING_DB_REMOTE -DCHROMIUM_BUILD -DFIELDTRIAL_TESTING_ENABLED -DANDROID -DHAVE_SYS_UIO_H -DANDROID_NDK_VERSION_ROLL=r16_1 -DCR_CLANG_REVISION=\"325667-1\" -D__GNU_SOURCE=1 -DCHROMIUM_CXX_TWEAK_INLINES -D_DEBUG -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DWTF_USE_DYNAMIC_ANNOTATIONS=1 -DWEBRTC_ENABLE_PROTOBUF=1 -DWEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE -DHAVE_SCTP -DUSE_BUILTIN_SW_CODECS -DWEBRTC_ARCH_ARM -DWEBRTC_ARCH_ARM_V7 -DWEBRTC_HAS_NEON -DWEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=1 -DWEBRTC_POSIX -DWEBRTC_LINUX -DWEBRTC_ANDROID
+include_dirs = -I../.. -Igen -I../../third_party/boringssl/src/include
+cflags = -Wno-uninitialized -fno-strict-aliasing --param=ssp-buffer-size=4 -fstack-protector -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -funwind-tables -fPIC -pipe -fcolor-diagnostics -no-canonical-prefixes -ffunction-sections -fno-short-enums --target=arm-linux-androideabi -isystem../../third_party/android_ndk/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -D__NDK_FPABI__= -DHAVE_PTHREAD_COND_TIMEDWAIT_MONOTONIC=1 -march=armv7-a -mfloat-abi=softfp -mtune=generic-armv7-a -mfpu=neon -mthumb -Oz -fno-ident -fdata-sections -ffunction-sections -fomit-frame-pointer -gdwarf-3 -g1 -fdebug-info-for-profiling -fvisibility=hidden -Xclang -load -Xclang ../../third_party/llvm-build/Release+Asserts/lib/libFindBadConstructs.so -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang check-ipc -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-strict-overflow -Wc++11-narrowing -Wimplicit-fallthrough -Wthread-safety -Winconsistent-missing-override -Wundef -Wunused-lambda-capture -Werror -Wall -Wno-unused-variable -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-covered-switch-default -Wno-unneeded-internal-declaration -Wno-inconsistent-missing-override -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-address-of-packed-member -Wno-unused-lambda-capture -Wno-user-defined-warnings -Wno-enum-compare-switch -Wno-null-pointer-arithmetic
+cflags_cc = -Wno-undefined-bool-conversion -Wno-tautological-undefined-compare -std=gnu++14 -fno-exceptions -fno-rtti -isystem../../third_party/android_ndk/sources/cxx-stl/llvm-libc++/include -isystem../../third_party/android_ndk/sources/cxx-stl/llvm-libc++abi/include -isystem../../third_party/android_ndk/sources/android/support/include --sysroot=../../third_party/android_ndk/sysroot -fvisibility-inlines-hidden -Wnon-virtual-dtor -Woverloaded-virtual
+label_name = rtc_base_generic
+root_out_dir = .
+target_out_dir = obj/rtc_base
+target_output_name = librtc_base_generic
+
+build obj/rtc_base/rtc_base_generic/asyncinvoker.o: cxx ../../rtc_base/asyncinvoker.cc
+build obj/rtc_base/rtc_base_generic/asyncpacketsocket.o: cxx ../../rtc_base/asyncpacketsocket.cc
+build obj/rtc_base/rtc_base_generic/asyncresolverinterface.o: cxx ../../rtc_base/asyncresolverinterface.cc
+build obj/rtc_base/rtc_base_generic/asyncsocket.o: cxx ../../rtc_base/asyncsocket.cc
+build obj/rtc_base/rtc_base_generic/asynctcpsocket.o: cxx ../../rtc_base/asynctcpsocket.cc
+build obj/rtc_base/rtc_base_generic/asyncudpsocket.o: cxx ../../rtc_base/asyncudpsocket.cc
+build obj/rtc_base/rtc_base_generic/crc32.o: cxx ../../rtc_base/crc32.cc
+build obj/rtc_base/rtc_base_generic/cryptstring.o: cxx ../../rtc_base/cryptstring.cc
+build obj/rtc_base/rtc_base_generic/data_rate_limiter.o: cxx ../../rtc_base/data_rate_limiter.cc
+build obj/rtc_base/rtc_base_generic/filerotatingstream.o: cxx ../../rtc_base/filerotatingstream.cc
+build obj/rtc_base/rtc_base_generic/fileutils.o: cxx ../../rtc_base/fileutils.cc
+build obj/rtc_base/rtc_base_generic/helpers.o: cxx ../../rtc_base/helpers.cc
+build obj/rtc_base/rtc_base_generic/httpcommon.o: cxx ../../rtc_base/httpcommon.cc
+build obj/rtc_base/rtc_base_generic/ipaddress.o: cxx ../../rtc_base/ipaddress.cc
+build obj/rtc_base/rtc_base_generic/messagedigest.o: cxx ../../rtc_base/messagedigest.cc
+build obj/rtc_base/rtc_base_generic/messagehandler.o: cxx ../../rtc_base/messagehandler.cc
+build obj/rtc_base/rtc_base_generic/messagequeue.o: cxx ../../rtc_base/messagequeue.cc
+build obj/rtc_base/rtc_base_generic/nethelper.o: cxx ../../rtc_base/nethelper.cc
+build obj/rtc_base/rtc_base_generic/nethelpers.o: cxx ../../rtc_base/nethelpers.cc
+build obj/rtc_base/rtc_base_generic/network.o: cxx ../../rtc_base/network.cc
+build obj/rtc_base/rtc_base_generic/networkmonitor.o: cxx ../../rtc_base/networkmonitor.cc
+build obj/rtc_base/rtc_base_generic/nullsocketserver.o: cxx ../../rtc_base/nullsocketserver.cc
+build obj/rtc_base/rtc_base_generic/openssladapter.o: cxx ../../rtc_base/openssladapter.cc
+build obj/rtc_base/rtc_base_generic/openssldigest.o: cxx ../../rtc_base/openssldigest.cc
+build obj/rtc_base/rtc_base_generic/opensslidentity.o: cxx ../../rtc_base/opensslidentity.cc
+build obj/rtc_base/rtc_base_generic/opensslstreamadapter.o: cxx ../../rtc_base/opensslstreamadapter.cc
+build obj/rtc_base/rtc_base_generic/physicalsocketserver.o: cxx ../../rtc_base/physicalsocketserver.cc
+build obj/rtc_base/rtc_base_generic/proxyinfo.o: cxx ../../rtc_base/proxyinfo.cc
+build obj/rtc_base/rtc_base_generic/rtccertificate.o: cxx ../../rtc_base/rtccertificate.cc
+build obj/rtc_base/rtc_base_generic/rtccertificategenerator.o: cxx ../../rtc_base/rtccertificategenerator.cc
+build obj/rtc_base/rtc_base_generic/signalthread.o: cxx ../../rtc_base/signalthread.cc
+build obj/rtc_base/rtc_base_generic/sigslot.o: cxx ../../rtc_base/sigslot.cc
+build obj/rtc_base/rtc_base_generic/socketadapters.o: cxx ../../rtc_base/socketadapters.cc
+build obj/rtc_base/rtc_base_generic/socketaddress.o: cxx ../../rtc_base/socketaddress.cc
+build obj/rtc_base/rtc_base_generic/socketaddresspair.o: cxx ../../rtc_base/socketaddresspair.cc
+build obj/rtc_base/rtc_base_generic/socketstream.o: cxx ../../rtc_base/socketstream.cc
+build obj/rtc_base/rtc_base_generic/ssladapter.o: cxx ../../rtc_base/ssladapter.cc
+build obj/rtc_base/rtc_base_generic/sslfingerprint.o: cxx ../../rtc_base/sslfingerprint.cc
+build obj/rtc_base/rtc_base_generic/sslidentity.o: cxx ../../rtc_base/sslidentity.cc
+build obj/rtc_base/rtc_base_generic/sslstreamadapter.o: cxx ../../rtc_base/sslstreamadapter.cc
+build obj/rtc_base/rtc_base_generic/stream.o: cxx ../../rtc_base/stream.cc
+build obj/rtc_base/rtc_base_generic/thread.o: cxx ../../rtc_base/thread.cc
+build obj/rtc_base/rtc_base_generic/zero_memory.o: cxx ../../rtc_base/zero_memory.cc
+build obj/rtc_base/rtc_base_generic/logsinks.o: cxx ../../rtc_base/logsinks.cc
+build obj/rtc_base/rtc_base_generic/optionsfile.o: cxx ../../rtc_base/optionsfile.cc
+build obj/rtc_base/rtc_base_generic/transformadapter.o: cxx ../../rtc_base/transformadapter.cc
+build obj/rtc_base/rtc_base_generic/ifaddrs-android.o: cxx ../../rtc_base/ifaddrs-android.cc
+build obj/rtc_base/rtc_base_generic/ifaddrs_converter.o: cxx ../../rtc_base/ifaddrs_converter.cc
+build obj/rtc_base/rtc_base_generic/unixfilesystem.o: cxx ../../rtc_base/unixfilesystem.cc
+
+build obj/rtc_base/librtc_base_generic.a: alink obj/rtc_base/rtc_base_generic/asyncinvoker.o obj/rtc_base/rtc_base_generic/asyncpacketsocket.o obj/rtc_base/rtc_base_generic/asyncresolverinterface.o obj/rtc_base/rtc_base_generic/asyncsocket.o obj/rtc_base/rtc_base_generic/asynctcpsocket.o obj/rtc_base/rtc_base_generic/asyncudpsocket.o obj/rtc_base/rtc_base_generic/crc32.o obj/rtc_base/rtc_base_generic/cryptstring.o obj/rtc_base/rtc_base_generic/data_rate_limiter.o obj/rtc_base/rtc_base_generic/filerotatingstream.o obj/rtc_base/rtc_base_generic/fileutils.o obj/rtc_base/rtc_base_generic/helpers.o obj/rtc_base/rtc_base_generic/httpcommon.o obj/rtc_base/rtc_base_generic/ipaddress.o obj/rtc_base/rtc_base_generic/messagedigest.o obj/rtc_base/rtc_base_generic/messagehandler.o obj/rtc_base/rtc_base_generic/messagequeue.o obj/rtc_base/rtc_base_generic/nethelper.o obj/rtc_base/rtc_base_generic/nethelpers.o obj/rtc_base/rtc_base_generic/network.o obj/rtc_base/rtc_base_generic/networkmonitor.o obj/rtc_base/rtc_base_generic/nullsocketserver.o obj/rtc_base/rtc_base_generic/openssladapter.o obj/rtc_base/rtc_base_generic/openssldigest.o obj/rtc_base/rtc_base_generic/opensslidentity.o obj/rtc_base/rtc_base_generic/opensslstreamadapter.o obj/rtc_base/rtc_base_generic/physicalsocketserver.o obj/rtc_base/rtc_base_generic/proxyinfo.o obj/rtc_base/rtc_base_generic/rtccertificate.o obj/rtc_base/rtc_base_generic/rtccertificategenerator.o obj/rtc_base/rtc_base_generic/signalthread.o obj/rtc_base/rtc_base_generic/sigslot.o obj/rtc_base/rtc_base_generic/socketadapters.o obj/rtc_base/rtc_base_generic/socketaddress.o obj/rtc_base/rtc_base_generic/socketaddresspair.o obj/rtc_base/rtc_base_generic/socketstream.o obj/rtc_base/rtc_base_generic/ssladapter.o obj/rtc_base/rtc_base_generic/sslfingerprint.o obj/rtc_base/rtc_base_generic/sslidentity.o obj/rtc_base/rtc_base_generic/sslstreamadapter.o obj/rtc_base/rtc_base_generic/stream.o obj/rtc_base/rtc_base_generic/thread.o obj/rtc_base/rtc_base_generic/zero_memory.o obj/rtc_base/rtc_base_generic/logsinks.o obj/rtc_base/rtc_base_generic/optionsfile.o obj/rtc_base/rtc_base_generic/transformadapter.o obj/rtc_base/rtc_base_generic/ifaddrs-android.o obj/rtc_base/rtc_base_generic/ifaddrs_converter.o obj/rtc_base/rtc_base_generic/unixfilesystem.o | ../../third_party/android_ndk/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/libgcc.a || obj/rtc_base/rtc_base_approved.stamp obj/rtc_base/checks.stamp obj/rtc_base/stringutils.stamp obj/libwebrtc_common.a obj/api/array_view.stamp obj/api/optional.stamp obj/third_party/boringssl/boringssl.stamp obj/rtc_base/rtc_base_approved_generic.stamp obj/rtc_base/safe_compare.stamp obj/rtc_base/type_traits.stamp obj/typedefs.stamp obj/rtc_base/sanitizer.stamp obj/rtc_base/deprecation.stamp obj/third_party/boringssl/boringssl_asm.stamp obj/third_party/boringssl/src/third_party/fiat/fiat_license.stamp
+  arflags =
+  output_extension = .a
+  output_dir = obj/rtc_base

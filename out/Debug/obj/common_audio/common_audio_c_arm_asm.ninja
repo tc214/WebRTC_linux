@@ -1,0 +1,13 @@
+defines = -DV8_DEPRECATION_WARNINGS -DNO_TCMALLOC -DSAFE_BROWSING_DB_REMOTE -DCHROMIUM_BUILD -DFIELDTRIAL_TESTING_ENABLED -DANDROID -DHAVE_SYS_UIO_H -DANDROID_NDK_VERSION_ROLL=r16_1 -DCR_CLANG_REVISION=\"325667-1\" -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__GNU_SOURCE=1 -DCHROMIUM_CXX_TWEAK_INLINES -D_DEBUG -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DWTF_USE_DYNAMIC_ANNOTATIONS=1 -DWEBRTC_ENABLE_PROTOBUF=1 -DWEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE -DHAVE_SCTP -DUSE_BUILTIN_SW_CODECS -DWEBRTC_ARCH_ARM -DWEBRTC_ARCH_ARM_V7 -DWEBRTC_HAS_NEON -DWEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=1 -DWEBRTC_POSIX -DWEBRTC_LINUX -DWEBRTC_ANDROID
+include_dirs = -I../.. -Igen
+asmflags = -fno-strict-aliasing --param=ssp-buffer-size=4 -fstack-protector -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -funwind-tables -fPIC -pipe -fcolor-diagnostics -no-canonical-prefixes -std=gnu11 -ffunction-sections -fno-short-enums --target=arm-linux-androideabi -isystem../../third_party/android_ndk/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -D__NDK_FPABI__= -DHAVE_PTHREAD_COND_TIMEDWAIT_MONOTONIC=1 -march=armv7-a -mfloat-abi=softfp -mtune=generic-armv7-a -mfpu=neon -gdwarf-3 -g1 -fdebug-info-for-profiling --sysroot=../../third_party/android_ndk/sysroot
+label_name = common_audio_c_arm_asm
+root_out_dir = .
+target_out_dir = obj/common_audio
+target_output_name = common_audio_c_arm_asm
+
+build obj/common_audio/common_audio_c_arm_asm/complex_bit_reverse_arm.o: asm ../../common_audio/signal_processing/complex_bit_reverse_arm.S
+build obj/common_audio/common_audio_c_arm_asm/spl_sqrt_floor_arm.o: asm ../../common_audio/signal_processing/spl_sqrt_floor_arm.S
+build obj/common_audio/common_audio_c_arm_asm/filter_ar_fast_q12_armv7.o: asm ../../common_audio/signal_processing/filter_ar_fast_q12_armv7.S
+
+build obj/common_audio/common_audio_c_arm_asm.stamp: stamp obj/common_audio/common_audio_c_arm_asm/complex_bit_reverse_arm.o obj/common_audio/common_audio_c_arm_asm/spl_sqrt_floor_arm.o obj/common_audio/common_audio_c_arm_asm/filter_ar_fast_q12_armv7.o || obj/system_wrappers/asm_defines.stamp

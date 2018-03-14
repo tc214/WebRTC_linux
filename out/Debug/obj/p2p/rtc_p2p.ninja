@@ -1,0 +1,43 @@
+defines = -DFEATURE_ENABLE_VOICEMAIL -DFEATURE_ENABLE_PSTN -DV8_DEPRECATION_WARNINGS -DNO_TCMALLOC -DSAFE_BROWSING_DB_REMOTE -DCHROMIUM_BUILD -DFIELDTRIAL_TESTING_ENABLED -DANDROID -DHAVE_SYS_UIO_H -DANDROID_NDK_VERSION_ROLL=r16_1 -DCR_CLANG_REVISION=\"325667-1\" -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__GNU_SOURCE=1 -DCHROMIUM_CXX_TWEAK_INLINES -D_DEBUG -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DWTF_USE_DYNAMIC_ANNOTATIONS=1 -DWEBRTC_ENABLE_PROTOBUF=1 -DWEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE -DHAVE_SCTP -DUSE_BUILTIN_SW_CODECS -DWEBRTC_ARCH_ARM -DWEBRTC_ARCH_ARM_V7 -DWEBRTC_HAS_NEON -DWEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=1 -DWEBRTC_POSIX -DWEBRTC_LINUX -DWEBRTC_ANDROID
+include_dirs = -I../.. -Igen
+cflags = -fno-strict-aliasing --param=ssp-buffer-size=4 -fstack-protector -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -funwind-tables -fPIC -pipe -fcolor-diagnostics -no-canonical-prefixes -ffunction-sections -fno-short-enums --target=arm-linux-androideabi -isystem../../third_party/android_ndk/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -D__NDK_FPABI__= -DHAVE_PTHREAD_COND_TIMEDWAIT_MONOTONIC=1 -march=armv7-a -mfloat-abi=softfp -mtune=generic-armv7-a -mfpu=neon -mthumb -Wall -Werror -Wextra -Wimplicit-fallthrough -Wthread-safety -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-covered-switch-default -Wno-unneeded-internal-declaration -Wno-inconsistent-missing-override -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-address-of-packed-member -Wno-unused-lambda-capture -Wno-user-defined-warnings -Wno-enum-compare-switch -Wno-null-pointer-arithmetic -Oz -fno-ident -fdata-sections -ffunction-sections -fomit-frame-pointer -gdwarf-3 -g1 -fdebug-info-for-profiling -fvisibility=hidden -Xclang -load -Xclang ../../third_party/llvm-build/Release+Asserts/lib/libFindBadConstructs.so -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang check-ipc -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-strict-overflow -Wc++11-narrowing -Wimplicit-fallthrough -Wthread-safety -Winconsistent-missing-override -Wundef -Wunused-lambda-capture
+cflags_cc = -Wno-undefined-bool-conversion -Wno-tautological-undefined-compare -std=gnu++14 -fno-exceptions -fno-rtti -isystem../../third_party/android_ndk/sources/cxx-stl/llvm-libc++/include -isystem../../third_party/android_ndk/sources/cxx-stl/llvm-libc++abi/include -isystem../../third_party/android_ndk/sources/android/support/include --sysroot=../../third_party/android_ndk/sysroot -fvisibility-inlines-hidden -Wnon-virtual-dtor -Woverloaded-virtual
+label_name = rtc_p2p
+root_out_dir = .
+target_out_dir = obj/p2p
+target_output_name = librtc_p2p
+
+build obj/p2p/rtc_p2p/asyncstuntcpsocket.o: cxx ../../p2p/base/asyncstuntcpsocket.cc
+build obj/p2p/rtc_p2p/basicpacketsocketfactory.o: cxx ../../p2p/base/basicpacketsocketfactory.cc
+build obj/p2p/rtc_p2p/dtlstransport.o: cxx ../../p2p/base/dtlstransport.cc
+build obj/p2p/rtc_p2p/dtlstransportinternal.o: cxx ../../p2p/base/dtlstransportinternal.cc
+build obj/p2p/rtc_p2p/icetransportinternal.o: cxx ../../p2p/base/icetransportinternal.cc
+build obj/p2p/rtc_p2p/p2pconstants.o: cxx ../../p2p/base/p2pconstants.cc
+build obj/p2p/rtc_p2p/p2ptransportchannel.o: cxx ../../p2p/base/p2ptransportchannel.cc
+build obj/p2p/rtc_p2p/packetlossestimator.o: cxx ../../p2p/base/packetlossestimator.cc
+build obj/p2p/rtc_p2p/packetsocketfactory.o: cxx ../../p2p/base/packetsocketfactory.cc
+build obj/p2p/rtc_p2p/packettransportinternal.o: cxx ../../p2p/base/packettransportinternal.cc
+build obj/p2p/rtc_p2p/port.o: cxx ../../p2p/base/port.cc
+build obj/p2p/rtc_p2p/portallocator.o: cxx ../../p2p/base/portallocator.cc
+build obj/p2p/rtc_p2p/portinterface.o: cxx ../../p2p/base/portinterface.cc
+build obj/p2p/rtc_p2p/pseudotcp.o: cxx ../../p2p/base/pseudotcp.cc
+build obj/p2p/rtc_p2p/relayport.o: cxx ../../p2p/base/relayport.cc
+build obj/p2p/rtc_p2p/session.o: cxx ../../p2p/base/session.cc
+build obj/p2p/rtc_p2p/stun.o: cxx ../../p2p/base/stun.cc
+build obj/p2p/rtc_p2p/stunport.o: cxx ../../p2p/base/stunport.cc
+build obj/p2p/rtc_p2p/stunrequest.o: cxx ../../p2p/base/stunrequest.cc
+build obj/p2p/rtc_p2p/tcpport.o: cxx ../../p2p/base/tcpport.cc
+build obj/p2p/rtc_p2p/transportdescription.o: cxx ../../p2p/base/transportdescription.cc
+build obj/p2p/rtc_p2p/transportdescriptionfactory.o: cxx ../../p2p/base/transportdescriptionfactory.cc
+build obj/p2p/rtc_p2p/turnport.o: cxx ../../p2p/base/turnport.cc
+build obj/p2p/rtc_p2p/udptransport.o: cxx ../../p2p/base/udptransport.cc
+build obj/p2p/rtc_p2p/basicportallocator.o: cxx ../../p2p/client/basicportallocator.cc
+build obj/p2p/rtc_p2p/turnportfactory.o: cxx ../../p2p/client/turnportfactory.cc
+build obj/p2p/rtc_p2p/relayserver.o: cxx ../../p2p/base/relayserver.cc
+build obj/p2p/rtc_p2p/stunserver.o: cxx ../../p2p/base/stunserver.cc
+build obj/p2p/rtc_p2p/turnserver.o: cxx ../../p2p/base/turnserver.cc
+
+build obj/p2p/librtc_p2p.a: alink obj/p2p/rtc_p2p/asyncstuntcpsocket.o obj/p2p/rtc_p2p/basicpacketsocketfactory.o obj/p2p/rtc_p2p/dtlstransport.o obj/p2p/rtc_p2p/dtlstransportinternal.o obj/p2p/rtc_p2p/icetransportinternal.o obj/p2p/rtc_p2p/p2pconstants.o obj/p2p/rtc_p2p/p2ptransportchannel.o obj/p2p/rtc_p2p/packetlossestimator.o obj/p2p/rtc_p2p/packetsocketfactory.o obj/p2p/rtc_p2p/packettransportinternal.o obj/p2p/rtc_p2p/port.o obj/p2p/rtc_p2p/portallocator.o obj/p2p/rtc_p2p/portinterface.o obj/p2p/rtc_p2p/pseudotcp.o obj/p2p/rtc_p2p/relayport.o obj/p2p/rtc_p2p/session.o obj/p2p/rtc_p2p/stun.o obj/p2p/rtc_p2p/stunport.o obj/p2p/rtc_p2p/stunrequest.o obj/p2p/rtc_p2p/tcpport.o obj/p2p/rtc_p2p/transportdescription.o obj/p2p/rtc_p2p/transportdescriptionfactory.o obj/p2p/rtc_p2p/turnport.o obj/p2p/rtc_p2p/udptransport.o obj/p2p/rtc_p2p/basicportallocator.o obj/p2p/rtc_p2p/turnportfactory.o obj/p2p/rtc_p2p/relayserver.o obj/p2p/rtc_p2p/stunserver.o obj/p2p/rtc_p2p/turnserver.o | ../../third_party/android_ndk/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/libgcc.a || obj/api/libjingle_peerconnection_api.a obj/api/optional.stamp obj/api/ortc_api.stamp obj/logging/ice_log.stamp obj/rtc_base/checks.stamp obj/rtc_base/librtc_base.a obj/rtc_base/stringutils.stamp obj/system_wrappers/field_trial_api.stamp obj/api/array_view.stamp obj/rtc_base/safe_compare.stamp obj/rtc_base/type_traits.stamp obj/typedefs.stamp obj/api/audio_options_api.stamp obj/rtc_base/sanitizer.stamp obj/rtc_base/rtc_base_approved.stamp obj/rtc_base/rtc_base_approved_generic.stamp obj/libwebrtc_common.a obj/rtc_base/deprecation.stamp obj/api/callfactory_api.stamp obj/api/fec_controller_api.stamp obj/modules/module_fec_api.stamp obj/api/libjingle_logging_api.stamp obj/api/rtc_stats_api.stamp obj/api/video_frame_api.stamp obj/api/audio/audio_mixer_api.stamp obj/api/audio/audio_frame_api.stamp obj/api/audio_codecs/audio_codecs_api.stamp obj/logging/rtc_event_log_api.stamp obj/media/rtc_media_config.stamp obj/modules/audio_processing/audio_processing_statistics.stamp obj/rtc_base/librtc_base_generic.a obj/third_party/boringssl/boringssl.stamp obj/third_party/boringssl/boringssl_asm.stamp obj/third_party/boringssl/src/third_party/fiat/fiat_license.stamp
+  arflags =
+  output_extension = .a
+  output_dir = obj/p2p

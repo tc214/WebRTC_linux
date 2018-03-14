@@ -1,0 +1,693 @@
+{
+  "input-strings": [
+    "../../third_party/android_tools/sdk/build-tools/27.0.3/dx", 
+    "-JXmx2G", 
+    "--num-threads=8", 
+    "--dex", 
+    "--force-jumbo", 
+    "--output", 
+    "gen/examples/AppRTCMobile_javalib.dex.jar"
+  ], 
+  "files-md5": "bfd8da378057d617b0e7070c83137f51", 
+  "input-files": [
+    {
+      "path": "lib.java/examples/AppRTCMobile_javalib.jar", 
+      "tag": "3b6b636b1db917e83c42b3a28ae593f6", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 4034090902
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$3.class", 
+          "tag": 879767798
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$18.class", 
+          "tag": 3303961413
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$18.class", 
+          "tag": 3153606803
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$13.class", 
+          "tag": 307077507
+        }, 
+        {
+          "path": "org/appspot/apprtc/ConnectActivity$1.class", 
+          "tag": 4285606608
+        }, 
+        {
+          "path": "org/appspot/apprtc/RoomParametersFetcher.class", 
+          "tag": 1205752996
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$10.class", 
+          "tag": 739902069
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallFragment$2.class", 
+          "tag": 974085838
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketChannelClient$WebSocketObserver$2.class", 
+          "tag": 1054915615
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketRTCClient$5.class", 
+          "tag": 3820799826
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketChannelClient$WebSocketObserver.class", 
+          "tag": 2296135438
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$PeerConnectionParameters.class", 
+          "tag": 431390315
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$12.class", 
+          "tag": 1560598414
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketRTCClient$4.class", 
+          "tag": 1152543322
+        }, 
+        {
+          "path": "org/appspot/apprtc/SettingsFragment.class", 
+          "tag": 238284832
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCBluetoothManager$1.class", 
+          "tag": 868025130
+        }, 
+        {
+          "path": "org/appspot/apprtc/DirectRTCClient$8.class", 
+          "tag": 2148247235
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCBluetoothManager$State.class", 
+          "tag": 3004085865
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketRTCClient$MessageType.class", 
+          "tag": 922742864
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$9.class", 
+          "tag": 3549506813
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$16.class", 
+          "tag": 1531206419
+        }, 
+        {
+          "path": "org/appspot/apprtc/ConnectActivity$3.class", 
+          "tag": 226394860
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$12.class", 
+          "tag": 2629924009
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$DataChannelParameters.class", 
+          "tag": 1807062448
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$14.class", 
+          "tag": 2676179321
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketChannelClient$WebSocketConnectionState.class", 
+          "tag": 272369021
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$ProxyVideoSink.class", 
+          "tag": 2466625674
+        }, 
+        {
+          "path": "org/appspot/apprtc/TCPChannelClient$TCPSocketClient.class", 
+          "tag": 1563068626
+        }, 
+        {
+          "path": "org/appspot/apprtc/DirectRTCClient$3.class", 
+          "tag": 81021257
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCProximitySensor.class", 
+          "tag": 2109761801
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$2.class", 
+          "tag": 1732429864
+        }, 
+        {
+          "path": "org/appspot/apprtc/RtcEventLog.class", 
+          "tag": 3613341422
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallFragment$1.class", 
+          "tag": 1149359991
+        }, 
+        {
+          "path": "org/appspot/apprtc/CpuMonitor$1.class", 
+          "tag": 444281953
+        }, 
+        {
+          "path": "org/appspot/apprtc/ConnectActivity.class", 
+          "tag": 4096727027
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$11.class", 
+          "tag": 2902934748
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketRTCClient.class", 
+          "tag": 3066812724
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketChannelClient$WebSocketObserver$3.class", 
+          "tag": 1709375993
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$14.class", 
+          "tag": 2035776745
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$8.class", 
+          "tag": 2540728615
+        }, 
+        {
+          "path": "org/appspot/apprtc/DirectRTCClient$5.class", 
+          "tag": 208170138
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$8.class", 
+          "tag": 1062352382
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$7.class", 
+          "tag": 311670927
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient.class", 
+          "tag": 1024796655
+        }, 
+        {
+          "path": "org/appspot/apprtc/CpuMonitor.class", 
+          "tag": 1813661419
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCClient$RoomConnectionParameters.class", 
+          "tag": 4292778206
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallFragment$4.class", 
+          "tag": 2225644683
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketRTCClient$2.class", 
+          "tag": 2961495885
+        }, 
+        {
+          "path": "org/appspot/apprtc/RoomParametersFetcher$1.class", 
+          "tag": 554886085
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCAudioManager$AudioManagerEvents.class", 
+          "tag": 2814191426
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCAudioManager$1.class", 
+          "tag": 2197267900
+        }, 
+        {
+          "path": "org/appspot/apprtc/UnhandledExceptionHandler$1.class", 
+          "tag": 3264284003
+        }, 
+        {
+          "path": "org/appspot/apprtc/UnhandledExceptionHandler$1$1.class", 
+          "tag": 1665765153
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$PeerConnectionEvents.class", 
+          "tag": 2242726353
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$10.class", 
+          "tag": 3198809841
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketChannelClient$WebSocketChannelEvents.class", 
+          "tag": 3813797217
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$SDPObserver$2.class", 
+          "tag": 3789932919
+        }, 
+        {
+          "path": "org/appspot/apprtc/DirectRTCClient$7.class", 
+          "tag": 1189116674
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$SDPObserver.class", 
+          "tag": 38438463
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$6.class", 
+          "tag": 4125127304
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCAudioManager$$Lambda$0.class", 
+          "tag": 2477313634
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$17.class", 
+          "tag": 229532578
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$5.class", 
+          "tag": 2201523814
+        }, 
+        {
+          "path": "org/appspot/apprtc/CpuMonitor$MovingAverage.class", 
+          "tag": 530843477
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$15.class", 
+          "tag": 986935267
+        }, 
+        {
+          "path": "org/appspot/apprtc/DirectRTCClient$6.class", 
+          "tag": 3663137365
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$PCObserver$2.class", 
+          "tag": 3502700995
+        }, 
+        {
+          "path": "org/appspot/apprtc/TCPChannelClient.class", 
+          "tag": 3411668921
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCBluetoothManager.class", 
+          "tag": 4196822072
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$19.class", 
+          "tag": 229534645
+        }, 
+        {
+          "path": "org/appspot/apprtc/CaptureQualityController.class", 
+          "tag": 2881431602
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketChannelClient$3.class", 
+          "tag": 3596605258
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$20.class", 
+          "tag": 2035985783
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketRTCClient$1.class", 
+          "tag": 2805254528
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$13.class", 
+          "tag": 2553453592
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketRTCClient$3.class", 
+          "tag": 1374402896
+        }, 
+        {
+          "path": "org/appspot/apprtc/DirectRTCClient$1.class", 
+          "tag": 1348597844
+        }, 
+        {
+          "path": "org/appspot/apprtc/TCPChannelClient$1.class", 
+          "tag": 786666503
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCBluetoothManager$BluetoothServiceListener.class", 
+          "tag": 1498589120
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketChannelClient.class", 
+          "tag": 465696118
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$7.class", 
+          "tag": 2648437561
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketRTCClient$ConnectionState.class", 
+          "tag": 1297201033
+        }, 
+        {
+          "path": "org/appspot/apprtc/SettingsActivity.class", 
+          "tag": 3186863889
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketRTCClient$8.class", 
+          "tag": 3904416438
+        }, 
+        {
+          "path": "org/appspot/apprtc/ConnectActivity$2.class", 
+          "tag": 2510669404
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$6.class", 
+          "tag": 4018635746
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallFragment$OnCallEvents.class", 
+          "tag": 3985966373
+        }, 
+        {
+          "path": "org/appspot/apprtc/DirectRTCClient$ConnectionState.class", 
+          "tag": 1945684923
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$11.class", 
+          "tag": 3404831950
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$5.class", 
+          "tag": 551527442
+        }, 
+        {
+          "path": "org/appspot/apprtc/UnhandledExceptionHandler.class", 
+          "tag": 2358693193
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCAudioManager$WiredHeadsetReceiver.class", 
+          "tag": 1197216458
+        }, 
+        {
+          "path": "org/appspot/apprtc/DirectRTCClient$2.class", 
+          "tag": 4025463913
+        }, 
+        {
+          "path": "org/appspot/apprtc/TCPChannelClient$TCPChannelEvents.class", 
+          "tag": 2811949555
+        }, 
+        {
+          "path": "org/appspot/apprtc/RecordedAudioToFileController$$Lambda$0.class", 
+          "tag": 665223282
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$16.class", 
+          "tag": 758626334
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketRTCClient$9.class", 
+          "tag": 3039366839
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCAudioManager$AudioManagerState.class", 
+          "tag": 3638096925
+        }, 
+        {
+          "path": "org/appspot/apprtc/DirectRTCClient.class", 
+          "tag": 2733234110
+        }, 
+        {
+          "path": "org/appspot/apprtc/TCPChannelClient$TCPSocket$1.class", 
+          "tag": 3622024417
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCClient.class", 
+          "tag": 4015087889
+        }, 
+        {
+          "path": "org/appspot/apprtc/RecordedAudioToFileController.class", 
+          "tag": 4110395452
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$PCObserver$4.class", 
+          "tag": 1098224980
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$4.class", 
+          "tag": 1658022924
+        }, 
+        {
+          "path": "org/appspot/apprtc/ConnectActivity$5.class", 
+          "tag": 4262713684
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCAudioManager$AudioDevice.class", 
+          "tag": 3376805674
+        }, 
+        {
+          "path": "org/appspot/apprtc/HudFragment.class", 
+          "tag": 827269713
+        }, 
+        {
+          "path": "org/appspot/apprtc/DirectRTCClient$4.class", 
+          "tag": 2685675987
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$1.class", 
+          "tag": 2139368269
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$PCObserver$3.class", 
+          "tag": 2976751411
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketChannelClient$2.class", 
+          "tag": 3518698764
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$1.class", 
+          "tag": 1208707920
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallFragment$3.class", 
+          "tag": 2831518217
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$9.class", 
+          "tag": 81404844
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCClient$SignalingParameters.class", 
+          "tag": 160225571
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$SDPObserver$1.class", 
+          "tag": 468174728
+        }, 
+        {
+          "path": "org/appspot/apprtc/CpuMonitor$ProcStat.class", 
+          "tag": 3754751151
+        }, 
+        {
+          "path": "org/appspot/apprtc/RtcEventLog$RtcEventLogState.class", 
+          "tag": 1742528959
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$15.class", 
+          "tag": 6122084
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity.class", 
+          "tag": 1459279416
+        }, 
+        {
+          "path": "org/appspot/apprtc/TCPChannelClient$TCPSocket$2.class", 
+          "tag": 3355844422
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$7$1.class", 
+          "tag": 1204628820
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallFragment.class", 
+          "tag": 3603258795
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketRTCClient$6.class", 
+          "tag": 3446303745
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$ProxyRenderer.class", 
+          "tag": 2365547812
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$17.class", 
+          "tag": 1724573287
+        }, 
+        {
+          "path": "org/appspot/apprtc/CallActivity$4.class", 
+          "tag": 2799562668
+        }, 
+        {
+          "path": "org/appspot/apprtc/CaptureQualityController$1.class", 
+          "tag": 1808173386
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$PCObserver$1.class", 
+          "tag": 969095296
+        }, 
+        {
+          "path": "org/appspot/apprtc/HudFragment$1.class", 
+          "tag": 4202040183
+        }, 
+        {
+          "path": "org/appspot/apprtc/RoomParametersFetcher$RoomParametersFetcherEvents.class", 
+          "tag": 4245498509
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCBluetoothManager$BluetoothHeadsetBroadcastReceiver.class", 
+          "tag": 2058102811
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCClient$SignalingEvents.class", 
+          "tag": 2367999554
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketRTCClient$7.class", 
+          "tag": 2706790445
+        }, 
+        {
+          "path": "org/appspot/apprtc/ConnectActivity$4.class", 
+          "tag": 1218364439
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$3.class", 
+          "tag": 658331911
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCAudioManager$2.class", 
+          "tag": 2900376299
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketChannelClient$1.class", 
+          "tag": 1472721304
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketChannelClient$WebSocketObserver$1.class", 
+          "tag": 407725027
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$PCObserver.class", 
+          "tag": 300093484
+        }, 
+        {
+          "path": "org/appspot/apprtc/TCPChannelClient$TCPSocket.class", 
+          "tag": 1928579848
+        }, 
+        {
+          "path": "org/appspot/apprtc/PeerConnectionClient$2.class", 
+          "tag": 1242421345
+        }, 
+        {
+          "path": "org/appspot/apprtc/TCPChannelClient$TCPSocket$3.class", 
+          "tag": 2240244396
+        }, 
+        {
+          "path": "org/appspot/apprtc/AppRTCAudioManager.class", 
+          "tag": 3307913163
+        }, 
+        {
+          "path": "org/appspot/apprtc/TCPChannelClient$TCPSocketServer.class", 
+          "tag": 2152965746
+        }, 
+        {
+          "path": "org/appspot/apprtc/WebSocketRTCClient$3$1.class", 
+          "tag": 4084358360
+        }, 
+        {
+          "path": "org/appspot/apprtc/util/AppRTCUtils.class", 
+          "tag": 271914701
+        }, 
+        {
+          "path": "org/appspot/apprtc/util/AsyncHttpURLConnection$AsyncHttpEvents.class", 
+          "tag": 3878763050
+        }, 
+        {
+          "path": "org/appspot/apprtc/util/AsyncHttpURLConnection.class", 
+          "tag": 3286461393
+        }, 
+        {
+          "path": "org/appspot/apprtc/util/AsyncHttpURLConnection$$Lambda$0.class", 
+          "tag": 4100367799
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/dex.py", 
+      "tag": "9d5f4024a1ea95bdbe1a05faead8d1a1"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "7d685a4951e7161683c633ab66ddd5a9"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "d9ec86c1d5580e7a62ef941378110757"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "a5ae0b9a12e459caee036ba2b1d002ea"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "dbfebf36346ecf7631d1f11830ba8d33"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "fb4749ac95d1f5dcba263e9eb8b77460"
+}

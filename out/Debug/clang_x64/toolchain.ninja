@@ -1,0 +1,174 @@
+rule clang_x64_cc
+  command =  ../../third_party/llvm-build/Release+Asserts/bin/clang -MMD -MF ${out}.d ${defines} ${include_dirs} ${cflags} ${cflags_c} -c ${in} -o ${out}
+  description = CC ${out}
+  depfile = ${out}.d
+  deps = gcc
+rule clang_x64_cxx
+  command =  ../../third_party/llvm-build/Release+Asserts/bin/clang++ -MMD -MF ${out}.d ${defines} ${include_dirs} ${cflags} ${cflags_cc} -c ${in} -o ${out}
+  description = CXX ${out}
+  depfile = ${out}.d
+  deps = gcc
+rule clang_x64_asm
+  command =  ../../third_party/llvm-build/Release+Asserts/bin/clang -MMD -MF ${out}.d ${defines} ${include_dirs} ${asmflags} -c ${in} -o ${out}
+  description = ASM ${out}
+  depfile = ${out}.d
+  deps = gcc
+rule clang_x64_alink
+  command = python "../../build/toolchain/gcc_ar_wrapper.py"  --output=${out} --ar="../../third_party/llvm-build/Release+Asserts/bin/llvm-ar" ${arflags} rcsD @"${out}.rsp"
+  description = AR ${out}
+  rspfile = ${out}.rsp
+  rspfile_content = ${in}
+rule clang_x64_solink
+  command = python "../../build/toolchain/gcc_solink_wrapper.py" --readelf="readelf" --nm="nm" --sofile="${output_dir}/${target_output_name}${output_extension}" --tocfile="${output_dir}/${target_output_name}${output_extension}.TOC" --output="${output_dir}/${target_output_name}${output_extension}"  -- ../../third_party/llvm-build/Release+Asserts/bin/clang++ -shared ${ldflags} -o "${output_dir}/${target_output_name}${output_extension}" -Wl,-soname="${target_output_name}${output_extension}" @"${output_dir}/${target_output_name}${output_extension}.rsp"
+  description = SOLINK ${output_dir}/${target_output_name}${output_extension}
+  rspfile = ${output_dir}/${target_output_name}${output_extension}.rsp
+  rspfile_content = -Wl,--whole-archive ${in} ${solibs} -Wl,--no-whole-archive  ${libs} 
+  pool = build_toolchain_link_pool
+  restat = 1
+rule clang_x64_solink_module
+  command = ../../third_party/llvm-build/Release+Asserts/bin/clang++ -shared ${ldflags} -o "${output_dir}/${target_output_name}${output_extension}" -Wl,-soname="${target_output_name}${output_extension}" @"${output_dir}/${target_output_name}${output_extension}.rsp"
+  description = SOLINK_MODULE ${output_dir}/${target_output_name}${output_extension}
+  rspfile = ${output_dir}/${target_output_name}${output_extension}.rsp
+  rspfile_content = -Wl,--whole-archive ${in} ${solibs} -Wl,--no-whole-archive  ${libs} 
+  pool = build_toolchain_link_pool
+rule clang_x64_link
+  command = python "../../build/toolchain/gcc_link_wrapper.py" --output="${output_dir}/${target_output_name}${output_extension}" -- ../../third_party/llvm-build/Release+Asserts/bin/clang++ ${ldflags} -o "${output_dir}/${target_output_name}${output_extension}" -Wl,--start-group @"${output_dir}/${target_output_name}${output_extension}.rsp" ${solibs} -Wl,--end-group   ${libs} 
+  description = LINK ${output_dir}/${target_output_name}${output_extension}
+  rspfile = ${output_dir}/${target_output_name}${output_extension}.rsp
+  rspfile_content = ${in}
+  pool = build_toolchain_link_pool
+rule clang_x64_stamp
+  command = touch ${out}
+  description = STAMP ${out}
+rule clang_x64_copy
+  command = ln -f ${in} ${out} 2>/dev/null || (rm -rf ${out} && cp -af ${in} ${out})
+  description = COPY ${in} ${out}
+
+rule __base_anchor_functions_buildflags___build_toolchain_linux_clang_x64__rule
+  rspfile = __base_anchor_functions_buildflags___build_toolchain_linux_clang_x64__rule.rsp
+  rspfile_content = --flags USE_LLD=true SUPPORTS_CODE_ORDERING=false
+  command = python ../../build/write_buildflag_header.py --output base/android/library_loader/anchor_functions_buildflags.h --rulename //base$:anchor_functions_buildflags --gen-dir clang_x64/gen --definitions ${rspfile}
+  description = ACTION //base:anchor_functions_buildflags(//build/toolchain/linux:clang_x64)
+  restat = 1
+  pool = build_toolchain_action_pool
+build clang_x64/obj/base/anchor_functions_buildflags.inputdeps.stamp: clang_x64_stamp ../../build/write_buildflag_header.py clang_x64/obj/build/buildflag_header_h.stamp
+
+build clang_x64/gen/base/android/library_loader/anchor_functions_buildflags.h: __base_anchor_functions_buildflags___build_toolchain_linux_clang_x64__rule | clang_x64/obj/base/anchor_functions_buildflags.inputdeps.stamp
+
+build clang_x64/obj/base/anchor_functions_buildflags.stamp: clang_x64_stamp clang_x64/gen/base/android/library_loader/anchor_functions_buildflags.h
+subninja clang_x64/obj/base/base.ninja
+subninja clang_x64/obj/base/base_static.ninja
+rule __base_build_date___build_toolchain_linux_clang_x64__rule
+  command = python ../../build/write_build_date_header.py clang_x64/gen/base/generated_build_date.h default
+  description = ACTION //base:build_date(//build/toolchain/linux:clang_x64)
+  restat = 1
+  pool = build_toolchain_action_pool
+build clang_x64/obj/base/build_date.inputdeps.stamp: clang_x64_stamp ../../build/write_build_date_header.py ../../build/util/LASTCHANGE
+
+build clang_x64/gen/base/generated_build_date.h: __base_build_date___build_toolchain_linux_clang_x64__rule | clang_x64/obj/base/build_date.inputdeps.stamp
+
+build clang_x64/obj/base/build_date.stamp: clang_x64_stamp clang_x64/gen/base/generated_build_date.h
+rule __base_cfi_buildflags___build_toolchain_linux_clang_x64__rule
+  rspfile = __base_cfi_buildflags___build_toolchain_linux_clang_x64__rule.rsp
+  rspfile_content = --flags CFI_CAST_CHECK=false\$ \&\&\$ false CFI_ICALL_CHECK=false\$ \&\&\$ false CFI_ENFORCEMENT_TRAP=false\$ \&\&\$ \!false CFI_ENFORCEMENT_DIAGNOSTIC=false\$ \&\&\$ false\$ \&\&\$ \!false
+  command = python ../../build/write_buildflag_header.py --output base/cfi_buildflags.h --rulename //base$:cfi_buildflags --gen-dir clang_x64/gen --definitions ${rspfile}
+  description = ACTION //base:cfi_buildflags(//build/toolchain/linux:clang_x64)
+  restat = 1
+  pool = build_toolchain_action_pool
+build clang_x64/obj/base/cfi_buildflags.inputdeps.stamp: clang_x64_stamp ../../build/write_buildflag_header.py clang_x64/obj/build/buildflag_header_h.stamp
+
+build clang_x64/gen/base/cfi_buildflags.h: __base_cfi_buildflags___build_toolchain_linux_clang_x64__rule | clang_x64/obj/base/cfi_buildflags.inputdeps.stamp
+
+build clang_x64/obj/base/cfi_buildflags.stamp: clang_x64_stamp clang_x64/gen/base/cfi_buildflags.h
+rule __base_debugging_buildflags___build_toolchain_linux_clang_x64__rule
+  rspfile = __base_debugging_buildflags___build_toolchain_linux_clang_x64__rule.rsp
+  rspfile_content = --flags ENABLE_LOCATION_SOURCE=true ENABLE_PROFILING=false CAN_UNWIND_WITH_FRAME_POINTERS=true UNSAFE_DEVELOPER_BUILD=true
+  command = python ../../build/write_buildflag_header.py --output base/debug/debugging_buildflags.h --rulename //base$:debugging_buildflags --gen-dir clang_x64/gen --definitions ${rspfile}
+  description = ACTION //base:debugging_buildflags(//build/toolchain/linux:clang_x64)
+  restat = 1
+  pool = build_toolchain_action_pool
+build clang_x64/obj/base/debugging_buildflags.inputdeps.stamp: clang_x64_stamp ../../build/write_buildflag_header.py clang_x64/obj/build/buildflag_header_h.stamp
+
+build clang_x64/gen/base/debug/debugging_buildflags.h: __base_debugging_buildflags___build_toolchain_linux_clang_x64__rule | clang_x64/obj/base/debugging_buildflags.inputdeps.stamp
+
+build clang_x64/obj/base/debugging_buildflags.stamp: clang_x64_stamp clang_x64/gen/base/debug/debugging_buildflags.h
+rule __base_partition_alloc_buildflags___build_toolchain_linux_clang_x64__rule
+  rspfile = __base_partition_alloc_buildflags___build_toolchain_linux_clang_x64__rule.rsp
+  rspfile_content = --flags USE_PARTITION_ALLOC=true
+  command = python ../../build/write_buildflag_header.py --output base/partition_alloc_buildflags.h --rulename //base$:partition_alloc_buildflags --gen-dir clang_x64/gen --definitions ${rspfile}
+  description = ACTION //base:partition_alloc_buildflags(//build/toolchain/linux:clang_x64)
+  restat = 1
+  pool = build_toolchain_action_pool
+build clang_x64/obj/base/partition_alloc_buildflags.inputdeps.stamp: clang_x64_stamp ../../build/write_buildflag_header.py clang_x64/obj/build/buildflag_header_h.stamp
+
+build clang_x64/gen/base/partition_alloc_buildflags.h: __base_partition_alloc_buildflags___build_toolchain_linux_clang_x64__rule | clang_x64/obj/base/partition_alloc_buildflags.inputdeps.stamp
+
+build clang_x64/obj/base/partition_alloc_buildflags.stamp: clang_x64_stamp clang_x64/gen/base/partition_alloc_buildflags.h
+rule __base_protected_memory_buildflags___build_toolchain_linux_clang_x64__rule
+  rspfile = __base_protected_memory_buildflags___build_toolchain_linux_clang_x64__rule.rsp
+  rspfile_content = --flags USE_LLD=true
+  command = python ../../build/write_buildflag_header.py --output base/memory/protected_memory_buildflags.h --rulename //base$:protected_memory_buildflags --gen-dir clang_x64/gen --definitions ${rspfile}
+  description = ACTION //base:protected_memory_buildflags(//build/toolchain/linux:clang_x64)
+  restat = 1
+  pool = build_toolchain_action_pool
+build clang_x64/obj/base/protected_memory_buildflags.inputdeps.stamp: clang_x64_stamp ../../build/write_buildflag_header.py clang_x64/obj/build/buildflag_header_h.stamp
+
+build clang_x64/gen/base/memory/protected_memory_buildflags.h: __base_protected_memory_buildflags___build_toolchain_linux_clang_x64__rule | clang_x64/obj/base/protected_memory_buildflags.inputdeps.stamp
+
+build clang_x64/obj/base/protected_memory_buildflags.stamp: clang_x64_stamp clang_x64/gen/base/memory/protected_memory_buildflags.h
+rule __base_synchronization_buildflags___build_toolchain_linux_clang_x64__rule
+  rspfile = __base_synchronization_buildflags___build_toolchain_linux_clang_x64__rule.rsp
+  rspfile_content = --flags ENABLE_MUTEX_PRIORITY_INHERITANCE=false
+  command = python ../../build/write_buildflag_header.py --output base/synchronization/synchronization_buildflags.h --rulename //base$:synchronization_buildflags --gen-dir clang_x64/gen --definitions ${rspfile}
+  description = ACTION //base:synchronization_buildflags(//build/toolchain/linux:clang_x64)
+  restat = 1
+  pool = build_toolchain_action_pool
+build clang_x64/obj/base/synchronization_buildflags.inputdeps.stamp: clang_x64_stamp ../../build/write_buildflag_header.py clang_x64/obj/build/buildflag_header_h.stamp
+
+build clang_x64/gen/base/synchronization/synchronization_buildflags.h: __base_synchronization_buildflags___build_toolchain_linux_clang_x64__rule | clang_x64/obj/base/synchronization_buildflags.inputdeps.stamp
+
+build clang_x64/obj/base/synchronization_buildflags.stamp: clang_x64_stamp clang_x64/gen/base/synchronization/synchronization_buildflags.h
+build clang_x64/obj/base/allocator/allocator.stamp: clang_x64_stamp clang_x64/obj/base/allocator/tcmalloc.stamp
+rule __base_allocator_buildflags___build_toolchain_linux_clang_x64__rule
+  rspfile = __base_allocator_buildflags___build_toolchain_linux_clang_x64__rule.rsp
+  rspfile_content = --flags USE_ALLOCATOR_SHIM=true
+  command = python ../../build/write_buildflag_header.py --output base/allocator/buildflags.h --rulename //base/allocator$:buildflags --gen-dir clang_x64/gen --definitions ${rspfile}
+  description = ACTION //base/allocator:buildflags(//build/toolchain/linux:clang_x64)
+  restat = 1
+  pool = build_toolchain_action_pool
+build clang_x64/obj/base/allocator/buildflags.inputdeps.stamp: clang_x64_stamp ../../build/write_buildflag_header.py clang_x64/obj/build/buildflag_header_h.stamp
+
+build clang_x64/gen/base/allocator/buildflags.h: __base_allocator_buildflags___build_toolchain_linux_clang_x64__rule | clang_x64/obj/base/allocator/buildflags.inputdeps.stamp
+
+build clang_x64/obj/base/allocator/buildflags.stamp: clang_x64_stamp clang_x64/gen/base/allocator/buildflags.h
+subninja clang_x64/obj/base/allocator/tcmalloc.ninja
+subninja clang_x64/obj/base/numerics/base_numerics.ninja
+subninja clang_x64/obj/base/third_party/dynamic_annotations/dynamic_annotations.ninja
+subninja clang_x64/obj/base/third_party/libevent/libevent.ninja
+subninja clang_x64/obj/base/third_party/symbolize/symbolize.ninja
+subninja clang_x64/obj/base/third_party/xdg_mime/xdg_mime.ninja
+subninja clang_x64/obj/base/third_party/xdg_user_dirs/xdg_user_dirs.ninja
+subninja clang_x64/obj/build/buildflag_header_h.ninja
+build clang_x64/obj/build/config/exe_and_shlib_deps.stamp: clang_x64_stamp clang_x64/obj/buildtools/third_party/libc++/libc++.stamp
+build clang_x64/obj/build/win/default_exe_manifest.stamp: clang_x64_stamp
+subninja clang_x64/obj/buildtools/third_party/libc++/libc++.ninja
+subninja clang_x64/obj/buildtools/third_party/libc++abi/libc++abi.ninja
+subninja clang_x64/obj/testing/gtest/gtest.ninja
+subninja clang_x64/obj/testing/gtest/gtest_main.ninja
+subninja clang_x64/obj/third_party/googletest/gtest.ninja
+subninja clang_x64/obj/third_party/googletest/gtest_main.ninja
+subninja clang_x64/obj/third_party/ijar/ijar.ninja
+subninja clang_x64/obj/third_party/modp_b64/modp_b64.ninja
+subninja clang_x64/obj/third_party/protobuf/protobuf_full.ninja
+subninja clang_x64/obj/third_party/protobuf/protoc.ninja
+subninja clang_x64/obj/third_party/protobuf/protoc_lib.ninja
+subninja clang_x64/obj/third_party/zlib/zlib.ninja
+subninja clang_x64/obj/third_party/zlib/zlib_adler32_simd.ninja
+subninja clang_x64/obj/third_party/zlib/zlib_crc32_simd.ninja
+subninja clang_x64/obj/third_party/zlib/zlib_inflate_chunk_simd.ninja
+subninja clang_x64/obj/third_party/zlib/zlib_x86_simd.ninja
+subninja clang_x64/obj/tools/android/common/common.ninja
+subninja clang_x64/obj/tools/android/forwarder2/host_forwarder.ninja
+subninja clang_x64/obj/tools/android/forwarder2/host_forwarder_source_set.ninja
+subninja clang_x64/obj/tools/android/forwarder2/host_forwarder_unittests.ninja
+subninja clang_x64/obj/tools/android/md5sum/md5sum_bin.ninja

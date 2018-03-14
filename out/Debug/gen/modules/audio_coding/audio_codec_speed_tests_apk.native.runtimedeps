@@ -1,0 +1,6 @@
+./lib.unstripped/lib_audio_codec_speed_tests__library.so
+../../resources/audio_coding/music_stereo_48kHz.pcm
+../../resources/audio_coding/speech_mono_16kHz.pcm
+../../resources/audio_coding/speech_mono_32_48kHz.pcm
+../../testing/test_env.py
+icudtl.dat

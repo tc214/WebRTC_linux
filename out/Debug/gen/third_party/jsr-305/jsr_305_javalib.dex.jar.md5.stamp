@@ -1,0 +1,233 @@
+{
+  "input-strings": [
+    "../../third_party/android_tools/sdk/build-tools/27.0.3/dx", 
+    "-JXmx2G", 
+    "--num-threads=8", 
+    "--dex", 
+    "--force-jumbo", 
+    "--output", 
+    "gen/third_party/jsr-305/jsr_305_javalib.dex.jar"
+  ], 
+  "files-md5": "37c1d2016c2dc04289db18f5e9af0600", 
+  "input-files": [
+    {
+      "path": "lib.java/third_party/jsr-305/jsr_305_javalib.jar", 
+      "tag": "9e20f97e1b074946da57502417253610", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 4034090902
+        }, 
+        {
+          "path": "javax/annotation/WillCloseWhenClosed.class", 
+          "tag": 1765894059
+        }, 
+        {
+          "path": "javax/annotation/MatchesPattern.class", 
+          "tag": 658479139
+        }, 
+        {
+          "path": "javax/annotation/Nonnegative.class", 
+          "tag": 3718885025
+        }, 
+        {
+          "path": "javax/annotation/Nonnull$Checker.class", 
+          "tag": 2108916003
+        }, 
+        {
+          "path": "javax/annotation/CheckForSigned.class", 
+          "tag": 3644016968
+        }, 
+        {
+          "path": "javax/annotation/Signed.class", 
+          "tag": 851634826
+        }, 
+        {
+          "path": "javax/annotation/Detainted.class", 
+          "tag": 2120211936
+        }, 
+        {
+          "path": "javax/annotation/WillNotClose.class", 
+          "tag": 996883304
+        }, 
+        {
+          "path": "javax/annotation/CheckReturnValue.class", 
+          "tag": 3085332834
+        }, 
+        {
+          "path": "javax/annotation/Untainted.class", 
+          "tag": 285164166
+        }, 
+        {
+          "path": "javax/annotation/Nonnegative$Checker.class", 
+          "tag": 4041978682
+        }, 
+        {
+          "path": "javax/annotation/Syntax.class", 
+          "tag": 547324137
+        }, 
+        {
+          "path": "javax/annotation/PropertyKey.class", 
+          "tag": 1478415054
+        }, 
+        {
+          "path": "javax/annotation/OverridingMethodsMustInvokeSuper.class", 
+          "tag": 1184929489
+        }, 
+        {
+          "path": "javax/annotation/WillClose.class", 
+          "tag": 2973528506
+        }, 
+        {
+          "path": "javax/annotation/RegEx$Checker.class", 
+          "tag": 2643418128
+        }, 
+        {
+          "path": "javax/annotation/Nonnull.class", 
+          "tag": 750632634
+        }, 
+        {
+          "path": "javax/annotation/ParametersAreNullableByDefault.class", 
+          "tag": 4284586164
+        }, 
+        {
+          "path": "javax/annotation/Nullable.class", 
+          "tag": 2362908435
+        }, 
+        {
+          "path": "javax/annotation/ParametersAreNonnullByDefault.class", 
+          "tag": 2081800175
+        }, 
+        {
+          "path": "javax/annotation/Tainted.class", 
+          "tag": 482163282
+        }, 
+        {
+          "path": "javax/annotation/MatchesPattern$Checker.class", 
+          "tag": 4247161753
+        }, 
+        {
+          "path": "javax/annotation/CheckForNull.class", 
+          "tag": 2678926925
+        }, 
+        {
+          "path": "javax/annotation/RegEx.class", 
+          "tag": 4228740796
+        }, 
+        {
+          "path": "javax/annotation/meta/When.class", 
+          "tag": 3318959799
+        }, 
+        {
+          "path": "javax/annotation/meta/TypeQualifier.class", 
+          "tag": 753887884
+        }, 
+        {
+          "path": "javax/annotation/meta/Exhaustive.class", 
+          "tag": 1278345394
+        }, 
+        {
+          "path": "javax/annotation/meta/Exclusive.class", 
+          "tag": 4013076759
+        }, 
+        {
+          "path": "javax/annotation/meta/TypeQualifierNickname.class", 
+          "tag": 2893047628
+        }, 
+        {
+          "path": "javax/annotation/meta/TypeQualifierDefault.class", 
+          "tag": 1591929795
+        }, 
+        {
+          "path": "javax/annotation/meta/TypeQualifierValidator.class", 
+          "tag": 1069325565
+        }, 
+        {
+          "path": "javax/annotation/concurrent/NotThreadSafe.class", 
+          "tag": 2853731077
+        }, 
+        {
+          "path": "javax/annotation/concurrent/ThreadSafe.class", 
+          "tag": 2791225600
+        }, 
+        {
+          "path": "javax/annotation/concurrent/GuardedBy.class", 
+          "tag": 4093857558
+        }, 
+        {
+          "path": "javax/annotation/concurrent/Immutable.class", 
+          "tag": 1185369774
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/dex.py", 
+      "tag": "9d5f4024a1ea95bdbe1a05faead8d1a1"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "7d685a4951e7161683c633ab66ddd5a9"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "d9ec86c1d5580e7a62ef941378110757"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "a5ae0b9a12e459caee036ba2b1d002ea"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "dbfebf36346ecf7631d1f11830ba8d33"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "93273bfb263e6501b7e219ea682c0afb"
+}

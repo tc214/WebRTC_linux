@@ -1,0 +1,95 @@
+{
+  "input-strings": [
+    "armeabi-v7a", 
+    "[]", 
+    "False"
+  ], 
+  "files-md5": "cef726476e0fd1a38a2a944251d626e0", 
+  "input-files": [
+    {
+      "path": "gen/arsc/apks/AppRTCMobile.ap_", 
+      "tag": "350a878477a6c3af9354d1ea698676c8"
+    }, 
+    {
+      "path": "../../build/android/gyp/apkbuilder.py", 
+      "tag": "0193d7280f5291faf817b48d7e99f1be"
+    }, 
+    {
+      "path": "gen/examples/AppRTCMobile/classes.dex", 
+      "tag": "1406d582231f3bfd0494b00a1dd5e14b"
+    }, 
+    {
+      "path": "libjingle_peerconnection_so.so", 
+      "tag": "1bfa7694b279bf661e9b7d87cf02c4ff"
+    }, 
+    {
+      "path": "../../build/android/gyp/apkbuilder.py", 
+      "tag": "0193d7280f5291faf817b48d7e99f1be"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "7d685a4951e7161683c633ab66ddd5a9"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "d9ec86c1d5580e7a62ef941378110757"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "a5ae0b9a12e459caee036ba2b1d002ea"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "dbfebf36346ecf7631d1f11830ba8d33"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "9eb44b8592d3c928c96bd782449a639c"
+}

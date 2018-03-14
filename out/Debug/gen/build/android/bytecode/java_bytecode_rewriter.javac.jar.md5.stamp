@@ -1,0 +1,219 @@
+{
+  "input-strings": [
+    "bin/errorprone", 
+    "-g", 
+    "-encoding", 
+    "UTF-8", 
+    "-sourcepath", 
+    ":", 
+    "-Xep:SynchronizeOnNonFinalField:OFF", 
+    "-Xep:ArgumentSelectionDefectChecker:OFF", 
+    "-Xep:NarrowingCompoundAssignment:OFF", 
+    "-Xep:TypeParameterUnusedInFormals:OFF", 
+    "-Xep:ReferenceEquality:OFF", 
+    "-Xep:CatchFail:OFF", 
+    "-Xep:JUnitAmbiguousTestClass:OFF", 
+    "-Xep:AssertionFailureIgnored:OFF", 
+    "-Xep:MissingFail:OFF", 
+    "-Xep:StaticGuardedByInstance:OFF", 
+    "-Xep:DefaultCharset:OFF", 
+    "-Xep:JdkObsolete:OFF", 
+    "-Xep:FunctionalInterfaceClash:OFF", 
+    "-Xep:FutureReturnValueIgnored:OFF", 
+    "-Xep:OperatorPrecedence:OFF", 
+    "-Xep:ThreadJoinLoop:OFF", 
+    "-Xep:NamedParameters:OFF", 
+    "-Xep:StringSplitter:OFF", 
+    "-Xep:ClassNewInstance:OFF", 
+    "-Xep:ClassCanBeStatic:OFF", 
+    "-Xep:FloatCast:OFF", 
+    "-Xep:ThreadLocalUsage:OFF", 
+    "-Xep:Finally:OFF", 
+    "-Xep:FragmentNotInstantiable:OFF", 
+    "-Xep:HidingField:OFF", 
+    "-Xep:IntLongMath:OFF", 
+    "-Xep:BadComparable:OFF", 
+    "-Xep:EqualsHashCode:OFF", 
+    "-Xep:TypeParameterShadowing:OFF", 
+    "-Xep:ImmutableEnumChecker:OFF", 
+    "-Xep:InputStreamSlowMultibyteRead:OFF", 
+    "-Xep:BoxedPrimitiveConstructor:OFF", 
+    "-Xep:OverrideThrowableToString:OFF", 
+    "-Xep:CollectionToArraySafeParameter:OFF", 
+    "-Xep:FloatingPointLiteralPrecision:ERROR", 
+    "-Xep:JavaLangClash:ERROR", 
+    "-Xep:MissingOverride:ERROR", 
+    "-Xep:ParameterName:ERROR", 
+    "-Xep:StaticQualifiedUsingExpression:ERROR", 
+    "-Xep:UseCorrectAssertInTests:ERROR", 
+    "-source", 
+    "1.8", 
+    "-target", 
+    "1.8", 
+    "-Xlint:unchecked", 
+    "-Werror", 
+    "-processorpath", 
+    "lib.java/tools/android/errorprone_plugin/errorprone_plugin_java.jar", 
+    "lib.java/third_party/ow2_asm/asm.interface.jar", 
+    "lib.java/third_party/ow2_asm/asm-tree.interface.jar", 
+    "lib.java/third_party/ow2_asm/asm-util.interface.jar"
+  ], 
+  "files-md5": "7cdab542fbf025a0c3a49a45935067ce", 
+  "input-files": [
+    {
+      "path": "bin/errorprone", 
+      "tag": "cc08fb50bcf6a1f6506d4aa86d191ef0"
+    }, 
+    {
+      "path": "lib.java/third_party/ow2_asm/asm.interface.jar", 
+      "tag": "a3aeb0e0e9ae2ec2b08ad47fe1ee2c73"
+    }, 
+    {
+      "path": "lib.java/third_party/ow2_asm/asm-tree.interface.jar", 
+      "tag": "7f9e3eeb6eae4437f9d1adc761213f27"
+    }, 
+    {
+      "path": "lib.java/third_party/ow2_asm/asm-util.interface.jar", 
+      "tag": "c68d7476b2dd0cafc8bc2af15aac83ff"
+    }, 
+    {
+      "path": "lib.java/tools/android/errorprone_plugin/errorprone_plugin_java.jar", 
+      "tag": "a4ff17a25d948a9c977d8b158543a8c7", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 4034090902
+        }, 
+        {
+          "path": "META-INF/services/com.google.errorprone.bugpatterns.BugChecker", 
+          "tag": 2265107091
+        }, 
+        {
+          "path": "org/chromium/tools/errorprone/plugin/NoSynchronizedThisCheck.class", 
+          "tag": 2119845360
+        }, 
+        {
+          "path": "org/chromium/tools/errorprone/plugin/NoSynchronizedMethodCheck.class", 
+          "tag": 3685185552
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/bytecode/java/org/chromium/bytecode/AssertionEnablerClassAdapter.java", 
+      "tag": "df9492dffb5cba8e9f250a562d7a08fd"
+    }, 
+    {
+      "path": "../../build/android/bytecode/java/org/chromium/bytecode/ByteCodeProcessor.java", 
+      "tag": "7a6adcc375bb20866bb13cda345e45e5"
+    }, 
+    {
+      "path": "../../build/android/bytecode/java/org/chromium/bytecode/CustomClassLoaderClassWriter.java", 
+      "tag": "17207360f74e8c6248d8be5e72b42228"
+    }, 
+    {
+      "path": "../../build/android/bytecode/java/org/chromium/bytecode/CustomResourcesClassAdapter.java", 
+      "tag": "906d87a4f57f299410a115ae9443c4a6"
+    }, 
+    {
+      "path": "../../build/android/bytecode/java/org/chromium/bytecode/TypeUtils.java", 
+      "tag": "0b054d68e9f03e469ec7419a8256baf5"
+    }, 
+    {
+      "path": "../../build/android/gyp/jar.py", 
+      "tag": "d9fdd688e373e4996db890d165666bbe"
+    }, 
+    {
+      "path": "../../build/android/gyp/javac.py", 
+      "tag": "9bf4dbe596bca12cdcbace9647455ef0"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "7d685a4951e7161683c633ab66ddd5a9"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "d9ec86c1d5580e7a62ef941378110757"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "a5ae0b9a12e459caee036ba2b1d002ea"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "dbfebf36346ecf7631d1f11830ba8d33"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/__init__.py", 
+      "tag": "de647b90a4b99c279f3e4e358ea39b3e"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/ansi.py", 
+      "tag": "3ad189643bf1b70eb5be73153569c26c"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/ansitowin32.py", 
+      "tag": "9b39fc8f8d1af5b00161ed93f037176b"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/initialise.py", 
+      "tag": "91141f9b74377895dae6f33b6de5cca8"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/win32.py", 
+      "tag": "e6ef5597c899deefd23e628b209763dd"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/winterm.py", 
+      "tag": "9d0c650cd287ccf58d29894feec2178f"
+    }
+  ], 
+  "strings-md5": "fa07566dbd9695046109bb5da2ee8ecc"
+}

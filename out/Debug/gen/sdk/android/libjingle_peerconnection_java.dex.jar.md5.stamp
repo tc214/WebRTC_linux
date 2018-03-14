@@ -1,0 +1,1321 @@
+{
+  "input-strings": [
+    "../../third_party/android_tools/sdk/build-tools/27.0.3/dx", 
+    "-JXmx2G", 
+    "--num-threads=8", 
+    "--dex", 
+    "--force-jumbo", 
+    "--output", 
+    "gen/sdk/android/libjingle_peerconnection_java.dex.jar"
+  ], 
+  "files-md5": "367f07628d6e9ffc0b45fe2e8f7a22af", 
+  "input-files": [
+    {
+      "path": "lib.java/sdk/android/libjingle_peerconnection_java.jar", 
+      "tag": "fb1550955b8ac7fe34cad0e821f98c5b", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 4034090902
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionFactory$Builder.class", 
+          "tag": 3149178264
+        }, 
+        {
+          "path": "org/webrtc/StatsReport.class", 
+          "tag": 1814010564
+        }, 
+        {
+          "path": "org/webrtc/VideoCapturer$CapturerObserver.class", 
+          "tag": 1525355845
+        }, 
+        {
+          "path": "org/webrtc/VideoTrack.class", 
+          "tag": 2244440744
+        }, 
+        {
+          "path": "org/webrtc/VideoFrame$TextureBuffer.class", 
+          "tag": 36072836
+        }, 
+        {
+          "path": "org/webrtc/AudioTrack.class", 
+          "tag": 4109723646
+        }, 
+        {
+          "path": "org/webrtc/EncodedImage.class", 
+          "tag": 294424377
+        }, 
+        {
+          "path": "org/webrtc/RtpParameters$Codec.class", 
+          "tag": 1556635036
+        }, 
+        {
+          "path": "org/webrtc/WrappedNativeVideoEncoder.class", 
+          "tag": 4048715319
+        }, 
+        {
+          "path": "org/webrtc/MediaSource$State.class", 
+          "tag": 3236105089
+        }, 
+        {
+          "path": "org/webrtc/EncodedImage$FrameType.class", 
+          "tag": 4003920333
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoderWrapper.class", 
+          "tag": 3397867268
+        }, 
+        {
+          "path": "org/webrtc/RtpParameters$Encoding.class", 
+          "tag": 599734239
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$KeyType.class", 
+          "tag": 2461624978
+        }, 
+        {
+          "path": "org/webrtc/RtpReceiver$Observer.class", 
+          "tag": 432872950
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoEncoder$YuvFormat$2.class", 
+          "tag": 3028862258
+        }, 
+        {
+          "path": "org/webrtc/SurfaceTextureHelper$7.class", 
+          "tag": 2617237607
+        }, 
+        {
+          "path": "org/webrtc/VideoFrame$I420Buffer.class", 
+          "tag": 2483696262
+        }, 
+        {
+          "path": "org/webrtc/AudioSource.class", 
+          "tag": 337971274
+        }, 
+        {
+          "path": "org/webrtc/VideoCodecInfo.class", 
+          "tag": 1107188913
+        }, 
+        {
+          "path": "org/webrtc/VideoFileRenderer.class", 
+          "tag": 2718639683
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoderFactory.class", 
+          "tag": 4009732074
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$NetworkState.class", 
+          "tag": 360172234
+        }, 
+        {
+          "path": "org/webrtc/ScreenCapturerAndroid.class", 
+          "tag": 4169895556
+        }, 
+        {
+          "path": "org/webrtc/Camera1Session.class", 
+          "tag": 119343409
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$IntervalRange.class", 
+          "tag": 3102166322
+        }, 
+        {
+          "path": "org/webrtc/FileVideoCapturer$1.class", 
+          "tag": 3043212333
+        }, 
+        {
+          "path": "org/webrtc/SurfaceViewRenderer.class", 
+          "tag": 3139249127
+        }, 
+        {
+          "path": "org/webrtc/YuvConverter$1.class", 
+          "tag": 347288932
+        }, 
+        {
+          "path": "org/webrtc/VideoDecoder.class", 
+          "tag": 1765997335
+        }, 
+        {
+          "path": "org/webrtc/VideoRenderer$I420Frame.class", 
+          "tag": 4291466855
+        }, 
+        {
+          "path": "org/webrtc/MediaStreamTrack$MediaType.class", 
+          "tag": 3738889975
+        }, 
+        {
+          "path": "org/webrtc/EncodedImage$1.class", 
+          "tag": 2817544140
+        }, 
+        {
+          "path": "org/webrtc/NV21Buffer.class", 
+          "tag": 3627147882
+        }, 
+        {
+          "path": "org/webrtc/Camera2Session$SessionState.class", 
+          "tag": 4038421284
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturer$MediaRecorderHandler.class", 
+          "tag": 96851237
+        }, 
+        {
+          "path": "org/webrtc/NV12Buffer.class", 
+          "tag": 1804405214
+        }, 
+        {
+          "path": "org/webrtc/WebRtcClassLoader.class", 
+          "tag": 2970555941
+        }, 
+        {
+          "path": "org/webrtc/AudioProcessingFactory.class", 
+          "tag": 610865705
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$IceGatheringState.class", 
+          "tag": 1525942840
+        }, 
+        {
+          "path": "org/webrtc/CameraEnumerationAndroid$2.class", 
+          "tag": 3178587962
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$$Lambda$1.class", 
+          "tag": 1551970902
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoder$CodecSpecificInfoH264.class", 
+          "tag": 323580145
+        }, 
+        {
+          "path": "org/webrtc/SdpObserver.class", 
+          "tag": 1893482987
+        }, 
+        {
+          "path": "org/webrtc/YuvConverter$$Lambda$0.class", 
+          "tag": 628911577
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$RtcpMuxPolicy.class", 
+          "tag": 3659692045
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$TlsCertPolicy.class", 
+          "tag": 1234270494
+        }, 
+        {
+          "path": "org/webrtc/RTCStatsReport.class", 
+          "tag": 3920492949
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$1.class", 
+          "tag": 2889847551
+        }, 
+        {
+          "path": "org/webrtc/VP8Encoder.class", 
+          "tag": 1858298338
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder$DecodedOutputBuffer.class", 
+          "tag": 1386990774
+        }, 
+        {
+          "path": "org/webrtc/VideoFrame$TextureBuffer$Type.class", 
+          "tag": 4143715490
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturer$CameraEventsHandler.class", 
+          "tag": 4148740103
+        }, 
+        {
+          "path": "org/webrtc/CalledByNative.class", 
+          "tag": 2884468478
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$10.class", 
+          "tag": 2951265823
+        }, 
+        {
+          "path": "org/webrtc/VideoFrame$$Lambda$0.class", 
+          "tag": 3232600911
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoder$Settings.class", 
+          "tag": 1096748283
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$$Lambda$0.class", 
+          "tag": 3839110887
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$$Lambda$2.class", 
+          "tag": 1857210577
+        }, 
+        {
+          "path": "org/webrtc/JavaI420Buffer.class", 
+          "tag": 1286119132
+        }, 
+        {
+          "path": "org/webrtc/RendererCommon.class", 
+          "tag": 1440080849
+        }, 
+        {
+          "path": "org/webrtc/VideoRenderer.class", 
+          "tag": 3474266253
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecUtils.class", 
+          "tag": 57648531
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$H264Profile.class", 
+          "tag": 1163794553
+        }, 
+        {
+          "path": "org/webrtc/Camera2Session.class", 
+          "tag": 1409169942
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoder$BitrateAllocation.class", 
+          "tag": 2082460959
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$SdpSemantics.class", 
+          "tag": 377648469
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoEncoderFactory$1.class", 
+          "tag": 650472668
+        }, 
+        {
+          "path": "org/webrtc/CameraEnumerationAndroid$CaptureFormat.class", 
+          "tag": 1884603380
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder$DecoderProperties.class", 
+          "tag": 990844328
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$2.class", 
+          "tag": 889125166
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$$Lambda$6.class", 
+          "tag": 2070468851
+        }, 
+        {
+          "path": "org/webrtc/FramerateBitrateAdjuster.class", 
+          "tag": 4023662057
+        }, 
+        {
+          "path": "org/webrtc/BaseBitrateAdjuster.class", 
+          "tag": 2073825772
+        }, 
+        {
+          "path": "org/webrtc/DataChannel$Observer.class", 
+          "tag": 139665794
+        }, 
+        {
+          "path": "org/webrtc/Camera2Capturer.class", 
+          "tag": 2672514910
+        }, 
+        {
+          "path": "org/webrtc/TextureBufferImpl.class", 
+          "tag": 719896303
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoDecoder$1.class", 
+          "tag": 4245632332
+        }, 
+        {
+          "path": "org/webrtc/Camera1Enumerator.class", 
+          "tag": 1603546673
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$$Lambda$3.class", 
+          "tag": 4019641985
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$$Lambda$5.class", 
+          "tag": 3414653451
+        }, 
+        {
+          "path": "org/webrtc/YuvHelper.class", 
+          "tag": 3127688209
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoDecoder$DecodedTextureMetadata.class", 
+          "tag": 975714119
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection.class", 
+          "tag": 2152516179
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$$Lambda$7.class", 
+          "tag": 424642895
+        }, 
+        {
+          "path": "org/webrtc/VideoFrameDrawer$YuvUploader.class", 
+          "tag": 262675046
+        }, 
+        {
+          "path": "org/webrtc/EglBase10$Context.class", 
+          "tag": 2689962076
+        }, 
+        {
+          "path": "org/webrtc/RendererCommon$VideoLayoutMeasure.class", 
+          "tag": 3494239452
+        }, 
+        {
+          "path": "org/webrtc/NativePeerConnectionFactory.class", 
+          "tag": 1956688540
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$9.class", 
+          "tag": 3741967528
+        }, 
+        {
+          "path": "org/webrtc/TextureBufferImpl$1.class", 
+          "tag": 720805079
+        }, 
+        {
+          "path": "org/webrtc/RtpTransceiver.class", 
+          "tag": 135807239
+        }, 
+        {
+          "path": "org/webrtc/CameraSession$Events.class", 
+          "tag": 1529100538
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoder$CodecSpecificInfo.class", 
+          "tag": 2322348203
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionFactory$Options.class", 
+          "tag": 727151523
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$NetworkInformation.class", 
+          "tag": 1479178451
+        }, 
+        {
+          "path": "org/webrtc/ScreenCapturerAndroid$1.class", 
+          "tag": 3523827554
+        }, 
+        {
+          "path": "org/webrtc/CameraEnumerationAndroid$CaptureFormat$FramerateRange.class", 
+          "tag": 3741237528
+        }, 
+        {
+          "path": "org/webrtc/SoftwareVideoEncoderFactory.class", 
+          "tag": 803599994
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoEncoder$YuvFormat.class", 
+          "tag": 3874988278
+        }, 
+        {
+          "path": "org/webrtc/VideoRenderer$Callbacks.class", 
+          "tag": 1266738826
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoEncoderFactory.class", 
+          "tag": 3886934190
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$IceTransportsType.class", 
+          "tag": 3212715157
+        }, 
+        {
+          "path": "org/webrtc/GlRectDrawer$Shader.class", 
+          "tag": 657771242
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitor.class", 
+          "tag": 4155900030
+        }, 
+        {
+          "path": "org/webrtc/DataChannel$State.class", 
+          "tag": 2410566949
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder.class", 
+          "tag": 154010146
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$1.class", 
+          "tag": 3293927667
+        }, 
+        {
+          "path": "org/webrtc/VP9Decoder.class", 
+          "tag": 1862540603
+        }, 
+        {
+          "path": "org/webrtc/GlUtil.class", 
+          "tag": 1540236919
+        }, 
+        {
+          "path": "org/webrtc/VideoDecoder$Settings.class", 
+          "tag": 3300937276
+        }, 
+        {
+          "path": "org/webrtc/RendererCommon$GlDrawer.class", 
+          "tag": 612406761
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturer$CameraStatistics.class", 
+          "tag": 2788238584
+        }, 
+        {
+          "path": "org/webrtc/VideoFrame.class", 
+          "tag": 1829332973
+        }, 
+        {
+          "path": "org/webrtc/VideoDecoder$DecodeInfo.class", 
+          "tag": 1745994251
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect.class", 
+          "tag": 2634963579
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$6.class", 
+          "tag": 2224229591
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$TcpCandidatePolicy.class", 
+          "tag": 1603771244
+        }, 
+        {
+          "path": "org/webrtc/CameraEnumerationAndroid.class", 
+          "tag": 4232178241
+        }, 
+        {
+          "path": "org/webrtc/FileVideoCapturer$VideoReader.class", 
+          "tag": 2314238709
+        }, 
+        {
+          "path": "org/webrtc/VideoCapturer$CapturerObserver$$CC.class", 
+          "tag": 472696225
+        }, 
+        {
+          "path": "org/webrtc/DtmfSender.class", 
+          "tag": 2503519350
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$IPAddress.class", 
+          "tag": 2716965786
+        }, 
+        {
+          "path": "org/webrtc/VP8Decoder.class", 
+          "tag": 984142388
+        }, 
+        {
+          "path": "org/webrtc/VideoCodecType.class", 
+          "tag": 2904193622
+        }, 
+        {
+          "path": "org/webrtc/SessionDescription.class", 
+          "tag": 1469848743
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$IceConnectionState.class", 
+          "tag": 381973129
+        }, 
+        {
+          "path": "org/webrtc/CameraSession$FailureType.class", 
+          "tag": 1138708952
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$Observer.class", 
+          "tag": 1013248459
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$5.class", 
+          "tag": 3399569887
+        }, 
+        {
+          "path": "org/webrtc/CameraEnumerator.class", 
+          "tag": 2840075100
+        }, 
+        {
+          "path": "org/webrtc/MediaConstraints$KeyValuePair.class", 
+          "tag": 1563328440
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$1.class", 
+          "tag": 1633277763
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoder$ScalingSettings.class", 
+          "tag": 2358709122
+        }, 
+        {
+          "path": "org/webrtc/VideoDecoderWrapper$$Lambda$0.class", 
+          "tag": 1229848901
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoderFallback.class", 
+          "tag": 3604635508
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoder$Callback.class", 
+          "tag": 2289127447
+        }, 
+        {
+          "path": "org/webrtc/SurfaceTextureHelper$3.class", 
+          "tag": 289194614
+        }, 
+        {
+          "path": "org/webrtc/VideoDecoder$Callback.class", 
+          "tag": 3977438428
+        }, 
+        {
+          "path": "org/webrtc/Camera2Session$CaptureSessionCallback.class", 
+          "tag": 841392079
+        }, 
+        {
+          "path": "org/webrtc/RtpParameters.class", 
+          "tag": 681093726
+        }, 
+        {
+          "path": "org/webrtc/SurfaceTextureHelper.class", 
+          "tag": 1059635469
+        }, 
+        {
+          "path": "org/webrtc/SurfaceTextureHelper$$Lambda$0.class", 
+          "tag": 266127662
+        }, 
+        {
+          "path": "org/webrtc/DefaultVideoEncoderFactory.class", 
+          "tag": 3488120173
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer.class", 
+          "tag": 1242275295
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$IceServer.class", 
+          "tag": 3206337567
+        }, 
+        {
+          "path": "org/webrtc/EncodedImage$Builder.class", 
+          "tag": 221934351
+        }, 
+        {
+          "path": "org/webrtc/DefaultVideoDecoderFactory.class", 
+          "tag": 3704198403
+        }, 
+        {
+          "path": "org/webrtc/MediaStreamTrack$State.class", 
+          "tag": 1229902254
+        }, 
+        {
+          "path": "org/webrtc/Camera1Session$SessionState.class", 
+          "tag": 2005722551
+        }, 
+        {
+          "path": "org/webrtc/SurfaceTextureHelper$5.class", 
+          "tag": 62773758
+        }, 
+        {
+          "path": "org/webrtc/VideoDecoderFactory.class", 
+          "tag": 3346760716
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitor$InstanceHolder.class", 
+          "tag": 3946153296
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder$TextureListener.class", 
+          "tag": 349123589
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder$DecodedTextureBuffer.class", 
+          "tag": 1642469262
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoder$EncodeInfo.class", 
+          "tag": 1410351500
+        }, 
+        {
+          "path": "org/webrtc/VideoSource.class", 
+          "tag": 353007213
+        }, 
+        {
+          "path": "org/webrtc/GlTextureFrameBuffer.class", 
+          "tag": 3881016231
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder$TimeStamps.class", 
+          "tag": 642886101
+        }, 
+        {
+          "path": "org/webrtc/Camera1Session$3$$Lambda$0.class", 
+          "tag": 3759978508
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$BundlePolicy.class", 
+          "tag": 1027611108
+        }, 
+        {
+          "path": "org/webrtc/VideoFrameDrawer$1.class", 
+          "tag": 3423151889
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$7.class", 
+          "tag": 3432216011
+        }, 
+        {
+          "path": "org/webrtc/RTCStats.class", 
+          "tag": 2295427777
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$$Lambda$4.class", 
+          "tag": 2502744200
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoderWrapper$$Lambda$0.class", 
+          "tag": 2090461587
+        }, 
+        {
+          "path": "org/webrtc/TurnCustomizer.class", 
+          "tag": 113071612
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$1.class", 
+          "tag": 1082603264
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoEncoder$YuvFormat$1.class", 
+          "tag": 264530904
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$ContinualGatheringPolicy.class", 
+          "tag": 3214959947
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$MediaCodecProperties.class", 
+          "tag": 2959256590
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$ConnectionType.class", 
+          "tag": 1205140063
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionFactory$InitializationOptions.class", 
+          "tag": 2971278290
+        }, 
+        {
+          "path": "org/webrtc/Camera2Session$CameraStateCallback.class", 
+          "tag": 27468331
+        }, 
+        {
+          "path": "org/webrtc/Camera1Capturer.class", 
+          "tag": 2182494543
+        }, 
+        {
+          "path": "org/webrtc/Camera1Session$1.class", 
+          "tag": 113429885
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionFactory$InitializationOptions$Builder.class", 
+          "tag": 3976381407
+        }, 
+        {
+          "path": "org/webrtc/NativeClassQualifiedName.class", 
+          "tag": 1984384431
+        }, 
+        {
+          "path": "org/webrtc/Histogram.class", 
+          "tag": 513329463
+        }, 
+        {
+          "path": "org/webrtc/DataChannel.class", 
+          "tag": 2985102792
+        }, 
+        {
+          "path": "org/webrtc/VideoCodecStatus.class", 
+          "tag": 3852340428
+        }, 
+        {
+          "path": "org/webrtc/WrappedNativeI420Buffer.class", 
+          "tag": 2922089827
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoDecoderFactory.class", 
+          "tag": 2019881526
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$Observer.class", 
+          "tag": 3154934626
+        }, 
+        {
+          "path": "org/webrtc/Camera2Session$CaptureSessionCallback$1.class", 
+          "tag": 2306531302
+        }, 
+        {
+          "path": "org/webrtc/SurfaceTextureHelper$OnTextureFrameAvailableListener.class", 
+          "tag": 1216834905
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoDecoder$FrameInfo.class", 
+          "tag": 1012250710
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoDecoderFactory$1.class", 
+          "tag": 2498133124
+        }, 
+        {
+          "path": "org/webrtc/SurfaceEglRenderer$$Lambda$0.class", 
+          "tag": 4045011173
+        }, 
+        {
+          "path": "org/webrtc/EglBase.class", 
+          "tag": 2851926599
+        }, 
+        {
+          "path": "org/webrtc/SurfaceTextureHelper$1.class", 
+          "tag": 2254698816
+        }, 
+        {
+          "path": "org/webrtc/RendererCommon$ScalingType.class", 
+          "tag": 3522137231
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$SimpleNetworkCallback.class", 
+          "tag": 2439413782
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$VideoCodecType.class", 
+          "tag": 296951584
+        }, 
+        {
+          "path": "org/webrtc/FecControllerFactoryFactoryInterface.class", 
+          "tag": 1997338480
+        }, 
+        {
+          "path": "org/webrtc/VideoFileRenderer$1.class", 
+          "tag": 821196294
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder$MediaCodecVideoDecoderErrorCallback.class", 
+          "tag": 627326162
+        }, 
+        {
+          "path": "org/webrtc/RendererCommon$RendererEvents.class", 
+          "tag": 433656268
+        }, 
+        {
+          "path": "org/webrtc/DataChannel$Buffer.class", 
+          "tag": 2987875039
+        }, 
+        {
+          "path": "org/webrtc/GlRectDrawer.class", 
+          "tag": 1738518993
+        }, 
+        {
+          "path": "org/webrtc/VideoRenderer$I420Frame$$Lambda$1.class", 
+          "tag": 225483951
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$AdapterType.class", 
+          "tag": 1658633652
+        }, 
+        {
+          "path": "org/webrtc/Camera2Session$1.class", 
+          "tag": 2610204102
+        }, 
+        {
+          "path": "org/webrtc/WrappedNativeVideoDecoder.class", 
+          "tag": 3478499052
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionFactory.class", 
+          "tag": 2211601918
+        }, 
+        {
+          "path": "org/webrtc/CallSessionFileRotatingLogSink.class", 
+          "tag": 4251009971
+        }, 
+        {
+          "path": "org/webrtc/NativeLibraryLoader.class", 
+          "tag": 1519070697
+        }, 
+        {
+          "path": "org/webrtc/NativeLibrary$DefaultLoader.class", 
+          "tag": 3845693877
+        }, 
+        {
+          "path": "org/webrtc/VideoCapturer.class", 
+          "tag": 1138130997
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$SwitchState.class", 
+          "tag": 1373984959
+        }, 
+        {
+          "path": "org/webrtc/SoftwareVideoDecoderFactory.class", 
+          "tag": 1419339244
+        }, 
+        {
+          "path": "org/webrtc/VideoFrameDrawer.class", 
+          "tag": 564918323
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$4.class", 
+          "tag": 4220892216
+        }, 
+        {
+          "path": "org/webrtc/FileVideoCapturer$VideoReaderY4M.class", 
+          "tag": 158894312
+        }, 
+        {
+          "path": "org/webrtc/SessionDescription$Type.class", 
+          "tag": 2679831713
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$1.class", 
+          "tag": 3797809912
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$WifiDirectManagerDelegate.class", 
+          "tag": 1809737573
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoEncoder.class", 
+          "tag": 1144194943
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$IceServer$Builder.class", 
+          "tag": 144857604
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder.class", 
+          "tag": 2197278861
+        }, 
+        {
+          "path": "org/webrtc/EglBase10.class", 
+          "tag": 631549801
+        }, 
+        {
+          "path": "org/webrtc/AndroidVideoTrackSourceObserver.class", 
+          "tag": 1339148361
+        }, 
+        {
+          "path": "org/webrtc/VideoDecoderWrapper.class", 
+          "tag": 3905331656
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$EncoderProperties.class", 
+          "tag": 2457601368
+        }, 
+        {
+          "path": "org/webrtc/JavaI420Buffer$$Lambda$0.class", 
+          "tag": 3807375245
+        }, 
+        {
+          "path": "org/webrtc/CameraEnumerationAndroid$ClosestComparator.class", 
+          "tag": 1989909428
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$11.class", 
+          "tag": 3972267239
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturer$CameraStatistics$1.class", 
+          "tag": 3837179377
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoDecoder.class", 
+          "tag": 1447445439
+        }, 
+        {
+          "path": "org/webrtc/DataChannel$Init.class", 
+          "tag": 3719537227
+        }, 
+        {
+          "path": "org/webrtc/VideoRenderer$I420Frame$$Lambda$0.class", 
+          "tag": 3383671912
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$CandidateNetworkPolicy.class", 
+          "tag": 2055830452
+        }, 
+        {
+          "path": "org/webrtc/Camera1Session$3$$Lambda$1.class", 
+          "tag": 1677336184
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoder$CodecSpecificInfoVP8.class", 
+          "tag": 1271147002
+        }, 
+        {
+          "path": "org/webrtc/RtpTransceiver$RtpTransceiverDirection.class", 
+          "tag": 2613592187
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturer.class", 
+          "tag": 3211092018
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder$1.class", 
+          "tag": 974164857
+        }, 
+        {
+          "path": "org/webrtc/MediaStream.class", 
+          "tag": 3472573901
+        }, 
+        {
+          "path": "org/webrtc/RtpSender.class", 
+          "tag": 735275018
+        }, 
+        {
+          "path": "org/webrtc/Camera2Enumerator.class", 
+          "tag": 2047972975
+        }, 
+        {
+          "path": "org/webrtc/Camera1Session$2.class", 
+          "tag": 137403040
+        }, 
+        {
+          "path": "org/webrtc/CameraSession$CreateSessionCallback.class", 
+          "tag": 3889109348
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$FrameListenerAndParams.class", 
+          "tag": 3089424754
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$1CaughtException.class", 
+          "tag": 1053803579
+        }, 
+        {
+          "path": "org/webrtc/CameraEnumerationAndroid$1.class", 
+          "tag": 2226276638
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$MediaRecorderState.class", 
+          "tag": 3923997614
+        }, 
+        {
+          "path": "org/webrtc/VideoDecoderFallback.class", 
+          "tag": 1752345596
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$8.class", 
+          "tag": 3098699048
+        }, 
+        {
+          "path": "org/webrtc/VP9Encoder.class", 
+          "tag": 994224396
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$WifiManagerDelegate.class", 
+          "tag": 4018526115
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitor$NetworkObserver.class", 
+          "tag": 771287933
+        }, 
+        {
+          "path": "org/webrtc/EglBase14$Context.class", 
+          "tag": 4187260984
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$3.class", 
+          "tag": 3268793111
+        }, 
+        {
+          "path": "org/webrtc/FileVideoCapturer.class", 
+          "tag": 1700104155
+        }, 
+        {
+          "path": "org/webrtc/EglBase$Context.class", 
+          "tag": 609475009
+        }, 
+        {
+          "path": "org/webrtc/JniHelper.class", 
+          "tag": 2586229326
+        }, 
+        {
+          "path": "org/webrtc/VideoSink.class", 
+          "tag": 3846959245
+        }, 
+        {
+          "path": "org/webrtc/Camera1Session$3.class", 
+          "tag": 893964586
+        }, 
+        {
+          "path": "org/webrtc/CalledByNativeUnchecked.class", 
+          "tag": 2990422447
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoEncoder$1.class", 
+          "tag": 3256990983
+        }, 
+        {
+          "path": "org/webrtc/IceCandidate.class", 
+          "tag": 1583919090
+        }, 
+        {
+          "path": "org/webrtc/RTCStatsCollectorCallback.class", 
+          "tag": 1831454484
+        }, 
+        {
+          "path": "org/webrtc/ScreenCapturerAndroid$2.class", 
+          "tag": 2395071302
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitor$1.class", 
+          "tag": 1044156918
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoder.class", 
+          "tag": 1469284566
+        }, 
+        {
+          "path": "org/webrtc/EglBase14.class", 
+          "tag": 2798573713
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$OutputBufferInfo.class", 
+          "tag": 1549742153
+        }, 
+        {
+          "path": "org/webrtc/MediaStreamTrack.class", 
+          "tag": 540044632
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$ConnectivityManagerDelegate.class", 
+          "tag": 4059915195
+        }, 
+        {
+          "path": "org/webrtc/MediaSource.class", 
+          "tag": 1017538245
+        }, 
+        {
+          "path": "org/webrtc/StatsObserver.class", 
+          "tag": 3158039652
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder$VideoCodecType.class", 
+          "tag": 4096672470
+        }, 
+        {
+          "path": "org/webrtc/BitrateAdjuster.class", 
+          "tag": 520742973
+        }, 
+        {
+          "path": "org/webrtc/GlShader.class", 
+          "tag": 1635581782
+        }, 
+        {
+          "path": "org/webrtc/SurfaceTextureHelper$4.class", 
+          "tag": 1064267241
+        }, 
+        {
+          "path": "org/webrtc/EglBase$$CC.class", 
+          "tag": 3681956140
+        }, 
+        {
+          "path": "org/webrtc/RtpReceiver.class", 
+          "tag": 2948714074
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$SignalingState.class", 
+          "tag": 454311658
+        }, 
+        {
+          "path": "org/webrtc/CameraSession.class", 
+          "tag": 1022855941
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer.class", 
+          "tag": 1613270104
+        }, 
+        {
+          "path": "org/webrtc/SurfaceTextureHelper$2.class", 
+          "tag": 1977304371
+        }, 
+        {
+          "path": "org/webrtc/StatsReport$Value.class", 
+          "tag": 3263286189
+        }, 
+        {
+          "path": "org/webrtc/JniCommon.class", 
+          "tag": 2193177100
+        }, 
+        {
+          "path": "org/webrtc/SurfaceViewRenderer$$Lambda$0.class", 
+          "tag": 1465889714
+        }, 
+        {
+          "path": "org/webrtc/Camera2Session$CameraCaptureCallback.class", 
+          "tag": 3874266410
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$RTCConfiguration.class", 
+          "tag": 325165563
+        }, 
+        {
+          "path": "org/webrtc/NativeLibrary.class", 
+          "tag": 3927791488
+        }, 
+        {
+          "path": "org/webrtc/RtpTransceiver$RtpTransceiverInit.class", 
+          "tag": 2924598067
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$FrameListener.class", 
+          "tag": 2521202004
+        }, 
+        {
+          "path": "org/webrtc/MediaConstraints.class", 
+          "tag": 972765233
+        }, 
+        {
+          "path": "org/webrtc/RendererCommon$1.class", 
+          "tag": 494024271
+        }, 
+        {
+          "path": "org/webrtc/JNINamespace.class", 
+          "tag": 1902884584
+        }, 
+        {
+          "path": "org/webrtc/VideoFileRenderer$$Lambda$0.class", 
+          "tag": 2385812093
+        }, 
+        {
+          "path": "org/webrtc/SurfaceEglRenderer.class", 
+          "tag": 1273129373
+        }, 
+        {
+          "path": "org/webrtc/DynamicBitrateAdjuster.class", 
+          "tag": 2491526270
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$BitrateAdjustmentType.class", 
+          "tag": 1296039569
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoder$CodecSpecificInfoVP9.class", 
+          "tag": 305705323
+        }, 
+        {
+          "path": "org/webrtc/YuvConverter.class", 
+          "tag": 2918654894
+        }, 
+        {
+          "path": "org/webrtc/VideoFrame$Buffer.class", 
+          "tag": 1757572553
+        }, 
+        {
+          "path": "org/webrtc/EglBase10$1FakeSurfaceHolder.class", 
+          "tag": 3248717516
+        }, 
+        {
+          "path": "org/webrtc/SurfaceTextureHelper$$Lambda$1.class", 
+          "tag": 2387621347
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$EglSurfaceCreation.class", 
+          "tag": 1899157527
+        }, 
+        {
+          "path": "org/webrtc/SurfaceTextureHelper$6.class", 
+          "tag": 3122692713
+        }, 
+        {
+          "path": "org/webrtc/VideoFileRenderer$$Lambda$1.class", 
+          "tag": 3798760592
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturer$CameraSwitchHandler.class", 
+          "tag": 4182558793
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$MediaCodecVideoEncoderErrorCallback.class", 
+          "tag": 3184795117
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionFactory$1.class", 
+          "tag": 1875492464
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/dex.py", 
+      "tag": "9d5f4024a1ea95bdbe1a05faead8d1a1"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "7d685a4951e7161683c633ab66ddd5a9"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "d9ec86c1d5580e7a62ef941378110757"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "a5ae0b9a12e459caee036ba2b1d002ea"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "dbfebf36346ecf7631d1f11830ba8d33"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "d95ec2d9d82b1353b50ae516e08c0d65"
+}

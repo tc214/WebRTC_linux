@@ -1,0 +1,55 @@
+{
+  "deps_info": {
+    "deps_configs": [
+      "gen/build/android/buildhooks/build_hooks_java.build_config",
+      "gen/build/android/buildhooks/build_hooks_android_java.build_config"
+    ],
+    "dex_path": "gen/examples/androidapp/third_party/autobanh/autobanh_java.dex.jar",
+    "gradle_treat_as_prebuilt": null,
+    "interface_jar_path": "lib.java/examples/androidapp/third_party/autobanh/autobanh.interface.jar",
+    "is_prebuilt": true,
+    "jar_path": "lib.java/examples/androidapp/third_party/autobanh/autobanh.jar",
+    "javac_full_classpath": [
+      "../../third_party/bazel/desugar/Desugar-runtime.jar",
+      "gen/build/android/buildhooks/build_hooks_android_java.javac.jar",
+      "gen/build/android/buildhooks/build_hooks_java.javac.jar"
+    ],
+    "javac_full_interface_classpath": [
+      "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar",
+      "lib.java/build/android/buildhooks/build_hooks_android_java.interface.jar",
+      "lib.java/build/android/buildhooks/build_hooks_java.interface.jar"
+    ],
+    "name": "autobanh_java.build_config",
+    "owned_resources_dirs": [],
+    "owned_resources_zips": [],
+    "path": "gen/examples/androidapp/third_party/autobanh/autobanh_java.build_config",
+    "requires_android": true,
+    "supports_android": true,
+    "type": "java_library",
+    "unprocessed_jar_path": "../../examples/androidapp/third_party/autobanh/lib/autobanh.jar"
+  },
+  "gradle": {
+    "bundled_srcjars": [],
+    "dependent_android_projects": [
+      "gen/build/android/buildhooks/build_hooks_android_java.build_config"
+    ],
+    "dependent_java_projects": [
+      "gen/build/android/buildhooks/build_hooks_java.build_config"
+    ],
+    "dependent_prebuilt_jars": []
+  },
+  "javac": {
+    "classpath": [
+      "gen/build/android/buildhooks/build_hooks_java.javac.jar",
+      "gen/build/android/buildhooks/build_hooks_android_java.javac.jar"
+    ],
+    "interface_classpath": [
+      "lib.java/build/android/buildhooks/build_hooks_java.interface.jar",
+      "lib.java/build/android/buildhooks/build_hooks_android_java.interface.jar"
+    ],
+    "processor_classes": [],
+    "processor_classpath": [],
+    "resource_packages": [],
+    "srcjars": []
+  }
+}

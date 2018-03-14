@@ -1,0 +1,137 @@
+{
+  "input-strings": [
+    "../../third_party/android_tools/sdk/build-tools/27.0.3/dx", 
+    "-JXmx2G", 
+    "--num-threads=8", 
+    "--dex", 
+    "--force-jumbo", 
+    "--output", 
+    "gen/examples/AppRTCMobile/AppRTCMobile.dex.jar"
+  ], 
+  "files-md5": "622acdc3812ddfde5c9090e58166b1d7", 
+  "input-files": [
+    {
+      "path": "gen/examples/AppRTCMobile/AppRTCMobile.jar", 
+      "tag": "02449ff1d1c404773c8ece8be900b044", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 4034090902
+        }, 
+        {
+          "path": "org/chromium/base/BuildConfig.class", 
+          "tag": 1345158430
+        }, 
+        {
+          "path": "org/chromium/base/library_loader/NativeLibraries.class", 
+          "tag": 624929749
+        }, 
+        {
+          "path": "org/appspot/apprtc/R$string.class", 
+          "tag": 3652618757
+        }, 
+        {
+          "path": "org/appspot/apprtc/R$array.class", 
+          "tag": 2522524622
+        }, 
+        {
+          "path": "org/appspot/apprtc/R$layout.class", 
+          "tag": 2636185022
+        }, 
+        {
+          "path": "org/appspot/apprtc/R.class", 
+          "tag": 110391418
+        }, 
+        {
+          "path": "org/appspot/apprtc/R$xml.class", 
+          "tag": 1668807858
+        }, 
+        {
+          "path": "org/appspot/apprtc/R$id.class", 
+          "tag": 2406869906
+        }, 
+        {
+          "path": "org/appspot/apprtc/R$style.class", 
+          "tag": 4042673036
+        }, 
+        {
+          "path": "org/appspot/apprtc/R$menu.class", 
+          "tag": 2988594109
+        }, 
+        {
+          "path": "org/appspot/apprtc/R$drawable.class", 
+          "tag": 3744514217
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/dex.py", 
+      "tag": "9d5f4024a1ea95bdbe1a05faead8d1a1"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "7d685a4951e7161683c633ab66ddd5a9"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "d9ec86c1d5580e7a62ef941378110757"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "a5ae0b9a12e459caee036ba2b1d002ea"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "dbfebf36346ecf7631d1f11830ba8d33"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "17843165e69f6a53c8e3876e3ec62b9b"
+}

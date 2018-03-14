@@ -1,0 +1,3 @@
+./lib.unstripped/lib_boringssl_ssl_tests__library.so
+../../testing/test_env.py
+icudtl.dat

@@ -1,0 +1,43 @@
+defines = -D_REENTRANT -DV8_DEPRECATION_WARNINGS -DNO_TCMALLOC -DSAFE_BROWSING_DB_REMOTE -DCHROMIUM_BUILD -DFIELDTRIAL_TESTING_ENABLED -DANDROID -DHAVE_SYS_UIO_H -DANDROID_NDK_VERSION_ROLL=r16_1 -DCR_CLANG_REVISION=\"325667-1\" -D__GNU_SOURCE=1 -DCHROMIUM_CXX_TWEAK_INLINES -D_DEBUG -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DWTF_USE_DYNAMIC_ANNOTATIONS=1 -DU_USING_ICU_NAMESPACE=0 -DU_ENABLE_DYLOAD=0 -DU_STATIC_IMPLEMENTATION -DICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE -DUCHAR_TYPE=uint16_t
+include_dirs = -I../../third_party/libxml/linux -I../.. -Igen -I../../third_party/libxml/src/include -I../../third_party/libxml/linux/include -I../../third_party/icu/source/common -I../../third_party/icu/source/i18n -I../../third_party/zlib
+cflags = -fno-strict-aliasing --param=ssp-buffer-size=4 -fstack-protector -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -funwind-tables -fPIC -pipe -fcolor-diagnostics -no-canonical-prefixes -ffunction-sections -fno-short-enums --target=arm-linux-androideabi -isystem../../third_party/android_ndk/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -D__NDK_FPABI__= -DHAVE_PTHREAD_COND_TIMEDWAIT_MONOTONIC=1 -march=armv7-a -mfloat-abi=softfp -mtune=generic-armv7-a -mfpu=neon -mthumb -Oz -fno-ident -fdata-sections -ffunction-sections -fomit-frame-pointer -gdwarf-3 -g1 -fdebug-info-for-profiling -fvisibility=hidden -Xclang -load -Xclang ../../third_party/llvm-build/Release+Asserts/lib/libFindBadConstructs.so -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang check-ipc -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Werror -Wall -Wno-unused-variable -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-covered-switch-default -Wno-unneeded-internal-declaration -Wno-inconsistent-missing-override -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-address-of-packed-member -Wno-unused-lambda-capture -Wno-user-defined-warnings -Wno-enum-compare-switch -Wno-null-pointer-arithmetic -Wno-pointer-sign -Wno-empty-body -Wno-tautological-pointer-compare -Wno-ignored-attributes -Wno-int-to-void-pointer-cast -Wno-incompatible-pointer-types -Wno-unused-function -Wno-enum-compare -DLIBXML_STATIC=
+cflags_c = -std=gnu11 --sysroot=../../third_party/android_ndk/sysroot
+cflags_cc = -Wno-undefined-bool-conversion -Wno-tautological-undefined-compare -std=gnu++14 -fno-exceptions -fno-rtti -isystem../../third_party/android_ndk/sources/cxx-stl/llvm-libc++/include -isystem../../third_party/android_ndk/sources/cxx-stl/llvm-libc++abi/include -isystem../../third_party/android_ndk/sources/android/support/include --sysroot=../../third_party/android_ndk/sysroot -fvisibility-inlines-hidden
+label_name = libxml
+root_out_dir = .
+target_out_dir = obj/third_party/libxml
+target_output_name = libxml2
+
+build obj/third_party/libxml/libxml/libxml_utils.o: cxx ../../third_party/libxml/chromium/libxml_utils.cc || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/HTMLparser.o: cc ../../third_party/libxml/src/HTMLparser.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/HTMLtree.o: cc ../../third_party/libxml/src/HTMLtree.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/SAX2.o: cc ../../third_party/libxml/src/SAX2.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/buf.o: cc ../../third_party/libxml/src/buf.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/chvalid.o: cc ../../third_party/libxml/src/chvalid.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/dict.o: cc ../../third_party/libxml/src/dict.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/encoding.o: cc ../../third_party/libxml/src/encoding.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/entities.o: cc ../../third_party/libxml/src/entities.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/error.o: cc ../../third_party/libxml/src/error.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/globals.o: cc ../../third_party/libxml/src/globals.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/hash.o: cc ../../third_party/libxml/src/hash.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/list.o: cc ../../third_party/libxml/src/list.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/parser.o: cc ../../third_party/libxml/src/parser.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/parserInternals.o: cc ../../third_party/libxml/src/parserInternals.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/pattern.o: cc ../../third_party/libxml/src/pattern.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/threads.o: cc ../../third_party/libxml/src/threads.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/tree.o: cc ../../third_party/libxml/src/tree.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/uri.o: cc ../../third_party/libxml/src/uri.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/valid.o: cc ../../third_party/libxml/src/valid.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/xmlIO.o: cc ../../third_party/libxml/src/xmlIO.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/xmlmemory.o: cc ../../third_party/libxml/src/xmlmemory.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/xmlreader.o: cc ../../third_party/libxml/src/xmlreader.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/xmlsave.o: cc ../../third_party/libxml/src/xmlsave.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/xmlstring.o: cc ../../third_party/libxml/src/xmlstring.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/xmlunicode.o: cc ../../third_party/libxml/src/xmlunicode.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/xmlwriter.o: cc ../../third_party/libxml/src/xmlwriter.c || obj/third_party/icu/icudata.stamp
+build obj/third_party/libxml/libxml/xpath.o: cc ../../third_party/libxml/src/xpath.c || obj/third_party/icu/icudata.stamp
+
+build obj/third_party/libxml/libxml2.a: alink obj/third_party/libxml/libxml/libxml_utils.o obj/third_party/libxml/libxml/HTMLparser.o obj/third_party/libxml/libxml/HTMLtree.o obj/third_party/libxml/libxml/SAX2.o obj/third_party/libxml/libxml/buf.o obj/third_party/libxml/libxml/chvalid.o obj/third_party/libxml/libxml/dict.o obj/third_party/libxml/libxml/encoding.o obj/third_party/libxml/libxml/entities.o obj/third_party/libxml/libxml/error.o obj/third_party/libxml/libxml/globals.o obj/third_party/libxml/libxml/hash.o obj/third_party/libxml/libxml/list.o obj/third_party/libxml/libxml/parser.o obj/third_party/libxml/libxml/parserInternals.o obj/third_party/libxml/libxml/pattern.o obj/third_party/libxml/libxml/threads.o obj/third_party/libxml/libxml/tree.o obj/third_party/libxml/libxml/uri.o obj/third_party/libxml/libxml/valid.o obj/third_party/libxml/libxml/xmlIO.o obj/third_party/libxml/libxml/xmlmemory.o obj/third_party/libxml/libxml/xmlreader.o obj/third_party/libxml/libxml/xmlsave.o obj/third_party/libxml/libxml/xmlstring.o obj/third_party/libxml/libxml/xmlunicode.o obj/third_party/libxml/libxml/xmlwriter.o obj/third_party/libxml/libxml/xpath.o | ../../third_party/android_ndk/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/libgcc.a || obj/third_party/icu/icuuc.stamp obj/third_party/zlib/libchrome_zlib.a obj/third_party/zlib/zlib_adler32_simd.stamp obj/third_party/zlib/zlib_arm_crc32.stamp obj/third_party/android_tools/cpu_features.stamp obj/third_party/zlib/zlib_inflate_chunk_simd.stamp obj/third_party/zlib/libzlib_x86_simd.a
+  arflags =
+  output_extension = .a
+  output_dir = obj/third_party/libxml

@@ -1,0 +1,49 @@
+{
+  "deps_info": {
+    "deps_configs": [
+      "gen/third_party/bazel/desugar/desugar_runtime_java.build_config"
+    ],
+    "dex_path": "gen/build/android/buildhooks/build_hooks_java.dex.jar",
+    "gradle_treat_as_prebuilt": null,
+    "interface_jar_path": "lib.java/build/android/buildhooks/build_hooks_java.interface.jar",
+    "is_prebuilt": false,
+    "jar_path": "lib.java/build/android/buildhooks/build_hooks_java.jar",
+    "java_sources_file": "gen/build/android/buildhooks/build_hooks_java.sources",
+    "javac_full_classpath": [
+      "../../third_party/bazel/desugar/Desugar-runtime.jar"
+    ],
+    "javac_full_interface_classpath": [
+      "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar"
+    ],
+    "name": "build_hooks_java.build_config",
+    "owned_resources_dirs": [],
+    "owned_resources_zips": [],
+    "path": "gen/build/android/buildhooks/build_hooks_java.build_config",
+    "requires_android": null,
+    "supports_android": true,
+    "type": "java_library",
+    "unprocessed_jar_path": "gen/build/android/buildhooks/build_hooks_java.javac.jar"
+  },
+  "gradle": {
+    "bundled_srcjars": [
+      "gen/build/android/buildhooks/base_build_hooks_config.srcjar"
+    ],
+    "dependent_android_projects": [],
+    "dependent_java_projects": [],
+    "dependent_prebuilt_jars": [
+      "lib.java/third_party/bazel/desugar/Desugar-runtime.jar"
+    ]
+  },
+  "javac": {
+    "classpath": [
+      "../../third_party/bazel/desugar/Desugar-runtime.jar"
+    ],
+    "interface_classpath": [
+      "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar"
+    ],
+    "processor_classes": [],
+    "processor_classpath": [],
+    "resource_packages": [],
+    "srcjars": []
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "input-strings": [], 
+  "files-md5": "a867b616d844d0284838f40d55d8610a", 
+  "input-files": [
+    {
+      "path": "lib.java/build/android/buildhooks/build_hooks_java.interface.jar", 
+      "tag": "7d63b679f65b2a685de5dcd52fbf16c3"
+    }, 
+    {
+      "path": "lib.java/build/android/buildhooks/build_hooks_android_java.interface.jar", 
+      "tag": "94c00ad91157907cfd770020d02f9b06"
+    }, 
+    {
+      "path": "lib.java/android.interface.jar", 
+      "tag": "37b1210806e59ec1c8dc9fa500fa18a9"
+    }, 
+    {
+      "path": "obj/examples/androidapp/third_party/autobanh/autobanh_java__process_prebuilt-bytecode-rewritten.jar", 
+      "tag": "611d20dbd0533e4ef06d40d6398a626a", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 346195380
+        }, 
+        {
+          "path": "de/tavendo/autobahn/ByteBufferInputStream.class", 
+          "tag": 3966296885
+        }, 
+        {
+          "path": "de/tavendo/autobahn/ByteBufferOutputStream.class", 
+          "tag": 1191644696
+        }, 
+        {
+          "path": "de/tavendo/autobahn/Doxygen.class", 
+          "tag": 537496928
+        }, 
+        {
+          "path": "de/tavendo/autobahn/NoCopyByteArrayOutputStream.class", 
+          "tag": 3363366209
+        }, 
+        {
+          "path": "de/tavendo/autobahn/PrefixMap.class", 
+          "tag": 2498988390
+        }, 
+        {
+          "path": "de/tavendo/autobahn/Utf8Validator.class", 
+          "tag": 4002357164
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocket$WebSocketConnectionObserver$WebSocketCloseNotification.class", 
+          "tag": 2392478111
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocket$WebSocketConnectionObserver.class", 
+          "tag": 1689754139
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocket.class", 
+          "tag": 2824431256
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketConnection$1.class", 
+          "tag": 3018890905
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketConnection$2.class", 
+          "tag": 2951553135
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketConnection$3.class", 
+          "tag": 2666730199
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketConnection$4.class", 
+          "tag": 2914178767
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketConnection$SocketThread.class", 
+          "tag": 3342576388
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketConnection$ThreadHandler.class", 
+          "tag": 404906319
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketConnection.class", 
+          "tag": 587328914
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketConnectionHandler.class", 
+          "tag": 3065641688
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketException.class", 
+          "tag": 942931843
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketFrameHeader.class", 
+          "tag": 610144138
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketMessage$BinaryMessage.class", 
+          "tag": 1331354700
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketMessage$ClientHandshake.class", 
+          "tag": 396408273
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketMessage$Close.class", 
+          "tag": 3433707969
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketMessage$ConnectionLost.class", 
+          "tag": 2483937684
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketMessage$Error.class", 
+          "tag": 749062375
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketMessage$Message.class", 
+          "tag": 89369906
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketMessage$Ping.class", 
+          "tag": 2214085994
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketMessage$Pong.class", 
+          "tag": 3000263321
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketMessage$ProtocolViolation.class", 
+          "tag": 4206542954
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketMessage$Quit.class", 
+          "tag": 2022624651
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketMessage$RawTextMessage.class", 
+          "tag": 4179241543
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketMessage$ServerError.class", 
+          "tag": 3052843684
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketMessage$ServerHandshake.class", 
+          "tag": 3688688998
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketMessage$TextMessage.class", 
+          "tag": 2314537519
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketMessage$WebSocketCloseCode.class", 
+          "tag": 490243027
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketMessage.class", 
+          "tag": 4206039083
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketOptions.class", 
+          "tag": 2458455895
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketReader$ReaderState.class", 
+          "tag": 2648678989
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketReader.class", 
+          "tag": 1735502425
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketWriter$ThreadHandler.class", 
+          "tag": 3108909083
+        }, 
+        {
+          "path": "de/tavendo/autobahn/WebSocketWriter.class", 
+          "tag": 1821060918
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/desugar.py", 
+      "tag": "4b00258d03ad87dd1313c1f9eac82032"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "7d685a4951e7161683c633ab66ddd5a9"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "d9ec86c1d5580e7a62ef941378110757"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "a5ae0b9a12e459caee036ba2b1d002ea"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "dbfebf36346ecf7631d1f11830ba8d33"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "d41d8cd98f00b204e9800998ecf8427e"
+}

@@ -1,0 +1,31 @@
+defines = -DV8_DEPRECATION_WARNINGS -DNO_TCMALLOC -DSAFE_BROWSING_DB_REMOTE -DCHROMIUM_BUILD -DFIELDTRIAL_TESTING_ENABLED -DANDROID -DHAVE_SYS_UIO_H -DANDROID_NDK_VERSION_ROLL=r16_1 -DCR_CLANG_REVISION=\"325667-1\" -D__GNU_SOURCE=1 -DCHROMIUM_CXX_TWEAK_INLINES -D_DEBUG -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DWTF_USE_DYNAMIC_ANNOTATIONS=1 -DPACKAGE_STRING=\"libsrtp2\$ 2.1.0-pre\" -DPACKAGE_VERSION=\"2.1.0-pre\" -DHAVE_CONFIG_H -DOPENSSL -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DHAVE_INT16_T -DHAVE_INT32_T -DHAVE_INT8_T -DHAVE_UINT16_T -DHAVE_UINT32_T -DHAVE_UINT64_T -DHAVE_UINT8_T -DHAVE_ARPA_INET_H -DHAVE_NETINET_IN_H -DHAVE_SYS_TYPES_H -DHAVE_UNISTD_H
+include_dirs = -I../.. -Igen -I../../third_party/libsrtp -I../../third_party/libsrtp/config -I../../third_party/libsrtp/include -I../../third_party/libsrtp/crypto/include -I../../third_party/boringssl/src/include
+cflags = -fno-strict-aliasing --param=ssp-buffer-size=4 -fstack-protector -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -funwind-tables -fPIC -pipe -fcolor-diagnostics -no-canonical-prefixes -ffunction-sections -fno-short-enums --target=arm-linux-androideabi -isystem../../third_party/android_ndk/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -D__NDK_FPABI__= -DHAVE_PTHREAD_COND_TIMEDWAIT_MONOTONIC=1 -march=armv7-a -mfloat-abi=softfp -mtune=generic-armv7-a -mfpu=neon -mthumb -Oz -fno-ident -fdata-sections -ffunction-sections -fomit-frame-pointer -gdwarf-3 -g1 -fdebug-info-for-profiling -fvisibility=hidden -Xclang -load -Xclang ../../third_party/llvm-build/Release+Asserts/lib/libFindBadConstructs.so -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang check-ipc -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Werror -Wall -Wno-unused-variable -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-covered-switch-default -Wno-unneeded-internal-declaration -Wno-inconsistent-missing-override -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-address-of-packed-member -Wno-unused-lambda-capture -Wno-user-defined-warnings -Wno-enum-compare-switch -Wno-null-pointer-arithmetic
+cflags_c = -std=gnu11 --sysroot=../../third_party/android_ndk/sysroot
+label_name = libsrtp
+root_out_dir = .
+target_out_dir = obj/third_party/libsrtp
+target_output_name = libsrtp
+
+build obj/third_party/libsrtp/libsrtp/aes_gcm_ossl.o: cc ../../third_party/libsrtp/crypto/cipher/aes_gcm_ossl.c
+build obj/third_party/libsrtp/libsrtp/aes_icm_ossl.o: cc ../../third_party/libsrtp/crypto/cipher/aes_icm_ossl.c
+build obj/third_party/libsrtp/libsrtp/cipher.o: cc ../../third_party/libsrtp/crypto/cipher/cipher.c
+build obj/third_party/libsrtp/libsrtp/null_cipher.o: cc ../../third_party/libsrtp/crypto/cipher/null_cipher.c
+build obj/third_party/libsrtp/libsrtp/auth.o: cc ../../third_party/libsrtp/crypto/hash/auth.c
+build obj/third_party/libsrtp/libsrtp/hmac_ossl.o: cc ../../third_party/libsrtp/crypto/hash/hmac_ossl.c
+build obj/third_party/libsrtp/libsrtp/null_auth.o: cc ../../third_party/libsrtp/crypto/hash/null_auth.c
+build obj/third_party/libsrtp/libsrtp/alloc.o: cc ../../third_party/libsrtp/crypto/kernel/alloc.c
+build obj/third_party/libsrtp/libsrtp/crypto_kernel.o: cc ../../third_party/libsrtp/crypto/kernel/crypto_kernel.c
+build obj/third_party/libsrtp/libsrtp/err.o: cc ../../third_party/libsrtp/crypto/kernel/err.c
+build obj/third_party/libsrtp/libsrtp/key.o: cc ../../third_party/libsrtp/crypto/kernel/key.c
+build obj/third_party/libsrtp/libsrtp/datatypes.o: cc ../../third_party/libsrtp/crypto/math/datatypes.c
+build obj/third_party/libsrtp/libsrtp/stat.o: cc ../../third_party/libsrtp/crypto/math/stat.c
+build obj/third_party/libsrtp/libsrtp/rdb.o: cc ../../third_party/libsrtp/crypto/replay/rdb.c
+build obj/third_party/libsrtp/libsrtp/rdbx.o: cc ../../third_party/libsrtp/crypto/replay/rdbx.c
+build obj/third_party/libsrtp/libsrtp/ekt.o: cc ../../third_party/libsrtp/srtp/ekt.c
+build obj/third_party/libsrtp/libsrtp/srtp.o: cc ../../third_party/libsrtp/srtp/srtp.c
+
+build obj/third_party/libsrtp/libsrtp.a: alink obj/third_party/libsrtp/libsrtp/aes_gcm_ossl.o obj/third_party/libsrtp/libsrtp/aes_icm_ossl.o obj/third_party/libsrtp/libsrtp/cipher.o obj/third_party/libsrtp/libsrtp/null_cipher.o obj/third_party/libsrtp/libsrtp/auth.o obj/third_party/libsrtp/libsrtp/hmac_ossl.o obj/third_party/libsrtp/libsrtp/null_auth.o obj/third_party/libsrtp/libsrtp/alloc.o obj/third_party/libsrtp/libsrtp/crypto_kernel.o obj/third_party/libsrtp/libsrtp/err.o obj/third_party/libsrtp/libsrtp/key.o obj/third_party/libsrtp/libsrtp/datatypes.o obj/third_party/libsrtp/libsrtp/stat.o obj/third_party/libsrtp/libsrtp/rdb.o obj/third_party/libsrtp/libsrtp/rdbx.o obj/third_party/libsrtp/libsrtp/ekt.o obj/third_party/libsrtp/libsrtp/srtp.o | ../../third_party/android_ndk/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/libgcc.a || obj/third_party/boringssl/boringssl.stamp obj/third_party/boringssl/boringssl_asm.stamp obj/third_party/boringssl/src/third_party/fiat/fiat_license.stamp
+  arflags =
+  output_extension = .a
+  output_dir = obj/third_party/libsrtp

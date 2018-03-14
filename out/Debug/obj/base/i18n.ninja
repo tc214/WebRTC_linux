@@ -1,0 +1,32 @@
+defines = -DBASE_I18N_IMPLEMENTATION -DV8_DEPRECATION_WARNINGS -DNO_TCMALLOC -DSAFE_BROWSING_DB_REMOTE -DCHROMIUM_BUILD -DFIELDTRIAL_TESTING_ENABLED -DANDROID -DHAVE_SYS_UIO_H -DANDROID_NDK_VERSION_ROLL=r16_1 -DCR_CLANG_REVISION=\"325667-1\" -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__GNU_SOURCE=1 -DCHROMIUM_CXX_TWEAK_INLINES -D_DEBUG -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DWTF_USE_DYNAMIC_ANNOTATIONS=1 -DU_USING_ICU_NAMESPACE=0 -DU_ENABLE_DYLOAD=0 -DU_STATIC_IMPLEMENTATION -DICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE -DUCHAR_TYPE=uint16_t
+include_dirs = -I../.. -Igen -I../../third_party/ced/src -I../../third_party/icu/source/common -I../../third_party/icu/source/i18n
+cflags = -fno-strict-aliasing --param=ssp-buffer-size=4 -fstack-protector -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -funwind-tables -fPIC -pipe -fcolor-diagnostics -no-canonical-prefixes -ffunction-sections -fno-short-enums --target=arm-linux-androideabi -isystem../../third_party/android_ndk/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -D__NDK_FPABI__= -DHAVE_PTHREAD_COND_TIMEDWAIT_MONOTONIC=1 -march=armv7-a -mfloat-abi=softfp -mtune=generic-armv7-a -mfpu=neon -mthumb -Wall -Werror -Wextra -Wimplicit-fallthrough -Wthread-safety -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-covered-switch-default -Wno-unneeded-internal-declaration -Wno-inconsistent-missing-override -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-address-of-packed-member -Wno-unused-lambda-capture -Wno-user-defined-warnings -Wno-enum-compare-switch -Wno-null-pointer-arithmetic -Oz -fno-ident -fdata-sections -ffunction-sections -fomit-frame-pointer -gdwarf-3 -g1 -fdebug-info-for-profiling -fvisibility=hidden -Xclang -load -Xclang ../../third_party/llvm-build/Release+Asserts/lib/libFindBadConstructs.so -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang check-ipc -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Wexit-time-destructors
+cflags_cc = -Wno-undefined-bool-conversion -Wno-tautological-undefined-compare -std=gnu++14 -fno-exceptions -fno-rtti -isystem../../third_party/android_ndk/sources/cxx-stl/llvm-libc++/include -isystem../../third_party/android_ndk/sources/cxx-stl/llvm-libc++abi/include -isystem../../third_party/android_ndk/sources/android/support/include --sysroot=../../third_party/android_ndk/sysroot -fvisibility-inlines-hidden
+label_name = i18n
+root_out_dir = .
+target_out_dir = obj/base
+target_output_name = base_i18n
+
+build obj/base/i18n.inputdeps.stamp: stamp obj/base/anchor_functions_buildflags.stamp obj/base/android_runtime_jni_headers__jni_Runtime.stamp obj/base/base_jni_headers__jni_gen.stamp obj/base/build_date.stamp obj/base/cfi_buildflags.stamp obj/base/debugging_buildflags.stamp obj/base/partition_alloc_buildflags.stamp obj/base/protected_memory_buildflags.stamp obj/base/synchronization_buildflags.stamp obj/base/allocator/buildflags.stamp obj/third_party/icu/icudata.stamp
+build obj/base/i18n/base_i18n_switches.o: cxx ../../base/i18n/base_i18n_switches.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/bidi_line_iterator.o: cxx ../../base/i18n/bidi_line_iterator.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/break_iterator.o: cxx ../../base/i18n/break_iterator.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/case_conversion.o: cxx ../../base/i18n/case_conversion.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/char_iterator.o: cxx ../../base/i18n/char_iterator.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/character_encoding.o: cxx ../../base/i18n/character_encoding.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/encoding_detection.o: cxx ../../base/i18n/encoding_detection.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/file_util_icu.o: cxx ../../base/i18n/file_util_icu.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/i18n_constants.o: cxx ../../base/i18n/i18n_constants.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/icu_string_conversions.o: cxx ../../base/i18n/icu_string_conversions.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/icu_util.o: cxx ../../base/i18n/icu_util.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/message_formatter.o: cxx ../../base/i18n/message_formatter.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/number_formatting.o: cxx ../../base/i18n/number_formatting.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/rtl.o: cxx ../../base/i18n/rtl.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/streaming_utf8_validator.o: cxx ../../base/i18n/streaming_utf8_validator.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/string_compare.o: cxx ../../base/i18n/string_compare.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/string_search.o: cxx ../../base/i18n/string_search.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/time_formatting.o: cxx ../../base/i18n/time_formatting.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/timezone.o: cxx ../../base/i18n/timezone.cc || obj/base/i18n.inputdeps.stamp
+build obj/base/i18n/utf8_validator_tables.o: cxx ../../base/i18n/utf8_validator_tables.cc || obj/base/i18n.inputdeps.stamp
+
+build obj/base/base_i18n.stamp: stamp obj/base/i18n/base_i18n_switches.o obj/base/i18n/bidi_line_iterator.o obj/base/i18n/break_iterator.o obj/base/i18n/case_conversion.o obj/base/i18n/char_iterator.o obj/base/i18n/character_encoding.o obj/base/i18n/encoding_detection.o obj/base/i18n/file_util_icu.o obj/base/i18n/i18n_constants.o obj/base/i18n/icu_string_conversions.o obj/base/i18n/icu_util.o obj/base/i18n/message_formatter.o obj/base/i18n/number_formatting.o obj/base/i18n/rtl.o obj/base/i18n/streaming_utf8_validator.o obj/base/i18n/string_compare.o obj/base/i18n/string_search.o obj/base/i18n/time_formatting.o obj/base/i18n/timezone.o obj/base/i18n/utf8_validator_tables.o || obj/third_party/ced/libced.a obj/third_party/icu/icu.stamp obj/base/base.stamp obj/base/third_party/dynamic_annotations/libdynamic_annotations.a obj/build/config/exe_and_shlib_deps.stamp obj/third_party/icu/icui18n.stamp obj/third_party/icu/icuuc.stamp obj/base/libbase_static.a obj/base/numerics/base_numerics.stamp obj/third_party/modp_b64/libmodp_b64.a obj/third_party/android_tools/cpu_features.stamp obj/third_party/ashmem/ashmem.stamp obj/base/third_party/libevent/libevent.a

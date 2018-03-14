@@ -1,0 +1,4 @@
+org.webrtc.Logging,../../rtc_base/java/src/org/webrtc/Logging.java
+org.webrtc.ThreadUtils,../../rtc_base/java/src/org/webrtc/ThreadUtils.java
+org.webrtc.Size,../../rtc_base/java/src/org/webrtc/Size.java
+org.webrtc.ContextUtils,../../rtc_base/java/src/org/webrtc/ContextUtils.java

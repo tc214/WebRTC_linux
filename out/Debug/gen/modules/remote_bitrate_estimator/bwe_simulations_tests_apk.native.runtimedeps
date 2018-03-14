@@ -1,0 +1,6 @@
+./lib.unstripped/lib_bwe_simulations_tests__library.so
+../../resources/sprint-uplink.rx
+../../resources/verizon4g-downlink.rx
+../../resources/google-wifi-3mbps.rx
+../../testing/test_env.py
+icudtl.dat

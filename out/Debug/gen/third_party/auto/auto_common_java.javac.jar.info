@@ -1,0 +1,8 @@
+com.google.auto.common.SuperficialValidation,../../third_party/auto/src/common/src/main/java/com/google/auto/common/SuperficialValidation.java
+com.google.auto.common.MoreTypes,../../third_party/auto/src/common/src/main/java/com/google/auto/common/MoreTypes.java
+com.google.auto.common.Overrides,../../third_party/auto/src/common/src/main/java/com/google/auto/common/Overrides.java
+com.google.auto.common.BasicAnnotationProcessor,../../third_party/auto/src/common/src/main/java/com/google/auto/common/BasicAnnotationProcessor.java
+com.google.auto.common.AnnotationValues,../../third_party/auto/src/common/src/main/java/com/google/auto/common/AnnotationValues.java
+com.google.auto.common.MoreElements,../../third_party/auto/src/common/src/main/java/com/google/auto/common/MoreElements.java
+com.google.auto.common.AnnotationMirrors,../../third_party/auto/src/common/src/main/java/com/google/auto/common/AnnotationMirrors.java
+com.google.auto.common.Visibility,../../third_party/auto/src/common/src/main/java/com/google/auto/common/Visibility.java

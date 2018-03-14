@@ -1,0 +1,51 @@
+{
+  "deps_info": {
+    "deps_configs": [
+      "gen/third_party/auto/auto_common_java.build_config",
+      "gen/third_party/guava/guava_java.build_config"
+    ],
+    "gradle_treat_as_prebuilt": null,
+    "interface_jar_path": "lib.java/third_party/auto/auto_service_java.interface.jar",
+    "is_prebuilt": false,
+    "jar_path": "lib.java/third_party/auto/auto_service_java.jar",
+    "java_sources_file": "gen/third_party/auto/auto_service_java.sources",
+    "javac_full_classpath": [
+      "../../third_party/guava/lib/guava.jar",
+      "gen/third_party/auto/auto_common_java.javac.jar"
+    ],
+    "javac_full_interface_classpath": [
+      "lib.java/third_party/guava/guava.interface.jar",
+      "lib.java/third_party/auto/auto_common_java.interface.jar"
+    ],
+    "name": "auto_service_java.build_config",
+    "path": "gen/third_party/auto/auto_service_java.build_config",
+    "requires_android": null,
+    "supports_android": null,
+    "type": "java_library",
+    "unprocessed_jar_path": "gen/third_party/auto/auto_service_java.javac.jar"
+  },
+  "gradle": {
+    "bundled_srcjars": [],
+    "dependent_android_projects": [],
+    "dependent_java_projects": [
+      "gen/third_party/auto/auto_common_java.build_config"
+    ],
+    "dependent_prebuilt_jars": [
+      "lib.java/third_party/guava/guava.jar"
+    ]
+  },
+  "javac": {
+    "classpath": [
+      "gen/third_party/auto/auto_common_java.javac.jar",
+      "../../third_party/guava/lib/guava.jar"
+    ],
+    "interface_classpath": [
+      "lib.java/third_party/auto/auto_common_java.interface.jar",
+      "lib.java/third_party/guava/guava.interface.jar"
+    ],
+    "processor_classes": [],
+    "processor_classpath": [],
+    "resource_packages": [],
+    "srcjars": []
+  }
+}

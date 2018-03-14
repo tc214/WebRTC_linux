@@ -1,0 +1,4 @@
+./lib.unstripped/lib_common_video_unittests__library.so
+../../resources/foreman_cif.yuv
+../../testing/test_env.py
+icudtl.dat

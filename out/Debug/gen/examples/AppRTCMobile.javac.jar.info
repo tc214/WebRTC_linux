@@ -1,0 +1,3 @@
+org.chromium.base.BuildConfig,gen/examples/AppRTCMobile__build_config_java.srcjar
+org.chromium.base.library_loader.NativeLibraries,gen/examples/AppRTCMobile__native_libraries_java.srcjar
+org.appspot.apprtc.R,gen/examples/AppRTCMobile__process_resources.srcjar

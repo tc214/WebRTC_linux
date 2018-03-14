@@ -1,0 +1,13 @@
+# Referenced at /tmp/tmpr4GDs0/AndroidManifest.xml:39
+-keep class org.appspot.apprtc.CallActivity { <init>(...); }
+
+# Referenced at /tmp/tmpr4GDs0/AndroidManifest.xml:21
+-keep class org.appspot.apprtc.ConnectActivity { <init>(...); }
+
+# Referenced at /tmp/tmpr4GDs0/AndroidManifest.xml:37
+-keep class org.appspot.apprtc.SettingsActivity { <init>(...); }
+
+# Referenced at /tmp/tmpr4GDs0/deps/AppRTCMobile_resources.resources.zip/layout/activity_call.xml:12
+# Referenced at /tmp/tmpr4GDs0/deps/AppRTCMobile_resources.resources.zip/layout/activity_call.xml:18
+-keep class org.webrtc.SurfaceViewRenderer { <init>(...); }
+

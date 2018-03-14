@@ -1,0 +1,22 @@
+defines = -DV8_DEPRECATION_WARNINGS -DNO_TCMALLOC -DSAFE_BROWSING_DB_REMOTE -DCHROMIUM_BUILD -DFIELDTRIAL_TESTING_ENABLED -DANDROID -DHAVE_SYS_UIO_H -DANDROID_NDK_VERSION_ROLL=r16_1 -DCR_CLANG_REVISION=\"325667-1\" -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__GNU_SOURCE=1 -DCHROMIUM_CXX_TWEAK_INLINES -D_DEBUG -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DWTF_USE_DYNAMIC_ANNOTATIONS=1 -DDL_ARM_NEON
+include_dirs = -I../.. -Igen -I../../third_party/openmax_dl
+asmflags = -fno-strict-aliasing --param=ssp-buffer-size=4 -fstack-protector -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -funwind-tables -fPIC -pipe -fcolor-diagnostics -no-canonical-prefixes -std=gnu11 -ffunction-sections -fno-short-enums --target=arm-linux-androideabi -isystem../../third_party/android_ndk/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -D__NDK_FPABI__= -DHAVE_PTHREAD_COND_TIMEDWAIT_MONOTONIC=1 -march=armv7-a -mfloat-abi=softfp -mtune=generic-armv7-a -mfpu=neon -gdwarf-3 -g1 -fdebug-info-for-profiling --sysroot=../../third_party/android_ndk/sysroot -fno-integrated-as -B../../third_party/android_ndk/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin
+label_name = openmax_dl_armv7
+root_out_dir = .
+target_out_dir = obj/third_party/openmax_dl/dl
+target_output_name = libopenmax_dl_armv7
+
+build obj/third_party/openmax_dl/dl/openmax_dl_armv7/armSP_FFT_CToC_FC32_Radix2_fs_unsafe_s.o: asm ../../third_party/openmax_dl/dl/sp/src/arm/armv7/armSP_FFT_CToC_FC32_Radix2_fs_unsafe_s.S
+build obj/third_party/openmax_dl/dl/openmax_dl_armv7/armSP_FFT_CToC_FC32_Radix4_fs_unsafe_s.o: asm ../../third_party/openmax_dl/dl/sp/src/arm/armv7/armSP_FFT_CToC_FC32_Radix4_fs_unsafe_s.S
+build obj/third_party/openmax_dl/dl/openmax_dl_armv7/armSP_FFT_CToC_FC32_Radix4_unsafe_s.o: asm ../../third_party/openmax_dl/dl/sp/src/arm/armv7/armSP_FFT_CToC_FC32_Radix4_unsafe_s.S
+build obj/third_party/openmax_dl/dl/openmax_dl_armv7/armSP_FFT_CToC_FC32_Radix8_fs_unsafe_s.o: asm ../../third_party/openmax_dl/dl/sp/src/arm/armv7/armSP_FFT_CToC_FC32_Radix8_fs_unsafe_s.S
+build obj/third_party/openmax_dl/dl/openmax_dl_armv7/omxSP_FFTInv_CToC_FC32_Sfs_s.o: asm ../../third_party/openmax_dl/dl/sp/src/arm/armv7/omxSP_FFTInv_CToC_FC32_Sfs_s.S
+build obj/third_party/openmax_dl/dl/openmax_dl_armv7/omxSP_FFTFwd_CToC_FC32_Sfs_s.o: asm ../../third_party/openmax_dl/dl/sp/src/arm/armv7/omxSP_FFTFwd_CToC_FC32_Sfs_s.S
+build obj/third_party/openmax_dl/dl/openmax_dl_armv7/armSP_FFTInv_CCSToR_F32_preTwiddleRadix2_unsafe_s.o: asm ../../third_party/openmax_dl/dl/sp/src/arm/armv7/armSP_FFTInv_CCSToR_F32_preTwiddleRadix2_unsafe_s.S
+build obj/third_party/openmax_dl/dl/openmax_dl_armv7/omxSP_FFTFwd_RToCCS_F32_Sfs_s.o: asm ../../third_party/openmax_dl/dl/sp/src/arm/armv7/omxSP_FFTFwd_RToCCS_F32_Sfs_s.S
+build obj/third_party/openmax_dl/dl/openmax_dl_armv7/omxSP_FFTInv_CCSToR_F32_Sfs_s.o: asm ../../third_party/openmax_dl/dl/sp/src/arm/armv7/omxSP_FFTInv_CCSToR_F32_Sfs_s.S
+
+build obj/third_party/openmax_dl/dl/libopenmax_dl_armv7.a: alink obj/third_party/openmax_dl/dl/openmax_dl_armv7/armSP_FFT_CToC_FC32_Radix2_fs_unsafe_s.o obj/third_party/openmax_dl/dl/openmax_dl_armv7/armSP_FFT_CToC_FC32_Radix4_fs_unsafe_s.o obj/third_party/openmax_dl/dl/openmax_dl_armv7/armSP_FFT_CToC_FC32_Radix4_unsafe_s.o obj/third_party/openmax_dl/dl/openmax_dl_armv7/armSP_FFT_CToC_FC32_Radix8_fs_unsafe_s.o obj/third_party/openmax_dl/dl/openmax_dl_armv7/omxSP_FFTInv_CToC_FC32_Sfs_s.o obj/third_party/openmax_dl/dl/openmax_dl_armv7/omxSP_FFTFwd_CToC_FC32_Sfs_s.o obj/third_party/openmax_dl/dl/openmax_dl_armv7/armSP_FFTInv_CCSToR_F32_preTwiddleRadix2_unsafe_s.o obj/third_party/openmax_dl/dl/openmax_dl_armv7/omxSP_FFTFwd_RToCCS_F32_Sfs_s.o obj/third_party/openmax_dl/dl/openmax_dl_armv7/omxSP_FFTInv_CCSToR_F32_Sfs_s.o | ../../third_party/android_ndk/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/libgcc.a
+  arflags =
+  output_extension = .a
+  output_dir = obj/third_party/openmax_dl/dl

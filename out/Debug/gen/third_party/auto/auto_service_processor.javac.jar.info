@@ -1,0 +1,2 @@
+com.google.auto.service.processor.ServicesFiles,../../third_party/auto/src/service/src/main/java/com/google/auto/service/processor/ServicesFiles.java
+com.google.auto.service.processor.AutoServiceProcessor,../../third_party/auto/src/service/src/main/java/com/google/auto/service/processor/AutoServiceProcessor.java

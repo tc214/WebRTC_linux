@@ -1,0 +1,4 @@
+../../examples/androidjunit/src/org/appspot/apprtc/BluetoothManagerTest.java
+../../examples/androidjunit/src/org/appspot/apprtc/DirectRTCClientTest.java
+../../examples/androidjunit/src/org/appspot/apprtc/TCPChannelClientTest.java
+../../sdk/android/tests/src/org/webrtc/CameraEnumerationTest.java

@@ -1,0 +1,305 @@
+{
+  "input-strings": [], 
+  "files-md5": "e699fa6935f7407a7ebccee1f264a732", 
+  "input-files": [
+    {
+      "path": "lib.java/build/android/buildhooks/build_hooks_java.interface.jar", 
+      "tag": "7d63b679f65b2a685de5dcd52fbf16c3"
+    }, 
+    {
+      "path": "lib.java/build/android/buildhooks/build_hooks_android_java.interface.jar", 
+      "tag": "94c00ad91157907cfd770020d02f9b06"
+    }, 
+    {
+      "path": "lib.java/android.interface.jar", 
+      "tag": "37b1210806e59ec1c8dc9fa500fa18a9"
+    }, 
+    {
+      "path": "obj/third_party/android_tools/support/android_support_annotations_java__process_prebuilt-bytecode-rewritten.jar", 
+      "tag": "595e0475e94aa48735c2470778a0a240", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 3993141178
+        }, 
+        {
+          "path": "android/support/annotation/ColorRes.class", 
+          "tag": 3968070447
+        }, 
+        {
+          "path": "android/support/annotation/ColorInt.class", 
+          "tag": 2808396753
+        }, 
+        {
+          "path": "android/support/annotation/AnimatorRes.class", 
+          "tag": 1001094290
+        }, 
+        {
+          "path": "android/support/annotation/VisibleForTesting.class", 
+          "tag": 1214635162
+        }, 
+        {
+          "path": "android/support/annotation/BoolRes.class", 
+          "tag": 199549871
+        }, 
+        {
+          "path": "android/support/annotation/InterpolatorRes.class", 
+          "tag": 3645256503
+        }, 
+        {
+          "path": "android/support/annotation/MainThread.class", 
+          "tag": 724262258
+        }, 
+        {
+          "path": "android/support/annotation/LayoutRes.class", 
+          "tag": 3301191435
+        }, 
+        {
+          "path": "android/support/annotation/AnimRes.class", 
+          "tag": 2786696493
+        }, 
+        {
+          "path": "android/support/annotation/FractionRes.class", 
+          "tag": 2139304550
+        }, 
+        {
+          "path": "android/support/annotation/DimenRes.class", 
+          "tag": 2968660323
+        }, 
+        {
+          "path": "android/support/annotation/NavigationRes.class", 
+          "tag": 1443366533
+        }, 
+        {
+          "path": "android/support/annotation/NonNull.class", 
+          "tag": 671934929
+        }, 
+        {
+          "path": "android/support/annotation/RequiresPermission$Read.class", 
+          "tag": 3657868284
+        }, 
+        {
+          "path": "android/support/annotation/RawRes.class", 
+          "tag": 2191812194
+        }, 
+        {
+          "path": "android/support/annotation/WorkerThread.class", 
+          "tag": 1303853441
+        }, 
+        {
+          "path": "android/support/annotation/XmlRes.class", 
+          "tag": 1051412893
+        }, 
+        {
+          "path": "android/support/annotation/RestrictTo.class", 
+          "tag": 224586666
+        }, 
+        {
+          "path": "android/support/annotation/TransitionRes.class", 
+          "tag": 3381637684
+        }, 
+        {
+          "path": "android/support/annotation/IntRange.class", 
+          "tag": 866891311
+        }, 
+        {
+          "path": "android/support/annotation/Keep.class", 
+          "tag": 3569459842
+        }, 
+        {
+          "path": "android/support/annotation/MenuRes.class", 
+          "tag": 2198781776
+        }, 
+        {
+          "path": "android/support/annotation/StringRes.class", 
+          "tag": 445339345
+        }, 
+        {
+          "path": "android/support/annotation/Nullable.class", 
+          "tag": 3269683517
+        }, 
+        {
+          "path": "android/support/annotation/AttrRes.class", 
+          "tag": 3320516785
+        }, 
+        {
+          "path": "android/support/annotation/PluralsRes.class", 
+          "tag": 789853326
+        }, 
+        {
+          "path": "android/support/annotation/StyleableRes.class", 
+          "tag": 3560609882
+        }, 
+        {
+          "path": "android/support/annotation/RequiresApi.class", 
+          "tag": 1308287684
+        }, 
+        {
+          "path": "android/support/annotation/FloatRange.class", 
+          "tag": 3765393780
+        }, 
+        {
+          "path": "android/support/annotation/AnyThread.class", 
+          "tag": 1647411961
+        }, 
+        {
+          "path": "android/support/annotation/CheckResult.class", 
+          "tag": 2401277866
+        }, 
+        {
+          "path": "android/support/annotation/FontRes.class", 
+          "tag": 1615038367
+        }, 
+        {
+          "path": "android/support/annotation/RequiresPermission$Write.class", 
+          "tag": 3597210362
+        }, 
+        {
+          "path": "android/support/annotation/RequiresPermission.class", 
+          "tag": 4155314039
+        }, 
+        {
+          "path": "android/support/annotation/StringDef.class", 
+          "tag": 2751196360
+        }, 
+        {
+          "path": "android/support/annotation/RestrictTo$Scope.class", 
+          "tag": 1053972106
+        }, 
+        {
+          "path": "android/support/annotation/ArrayRes.class", 
+          "tag": 4274790446
+        }, 
+        {
+          "path": "android/support/annotation/IdRes.class", 
+          "tag": 3583483276
+        }, 
+        {
+          "path": "android/support/annotation/AnyRes.class", 
+          "tag": 867485200
+        }, 
+        {
+          "path": "android/support/annotation/IntegerRes.class", 
+          "tag": 1502776056
+        }, 
+        {
+          "path": "android/support/annotation/CallSuper.class", 
+          "tag": 1819383911
+        }, 
+        {
+          "path": "android/support/annotation/Px.class", 
+          "tag": 4088708019
+        }, 
+        {
+          "path": "android/support/annotation/StyleRes.class", 
+          "tag": 1094403845
+        }, 
+        {
+          "path": "android/support/annotation/HalfFloat.class", 
+          "tag": 3897426474
+        }, 
+        {
+          "path": "android/support/annotation/ColorLong.class", 
+          "tag": 26052027
+        }, 
+        {
+          "path": "android/support/annotation/IntDef.class", 
+          "tag": 3999677408
+        }, 
+        {
+          "path": "android/support/annotation/UiThread.class", 
+          "tag": 1698852048
+        }, 
+        {
+          "path": "android/support/annotation/DrawableRes.class", 
+          "tag": 2217703381
+        }, 
+        {
+          "path": "android/support/annotation/BinderThread.class", 
+          "tag": 3831996694
+        }, 
+        {
+          "path": "android/support/annotation/Size.class", 
+          "tag": 1131031471
+        }, 
+        {
+          "path": "android/support/annotation/Dimension.class", 
+          "tag": 2507913697
+        }, 
+        {
+          "path": "android/support/annotation/GuardedBy.class", 
+          "tag": 3757893054
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/desugar.py", 
+      "tag": "4b00258d03ad87dd1313c1f9eac82032"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "7d685a4951e7161683c633ab66ddd5a9"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "d9ec86c1d5580e7a62ef941378110757"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "a5ae0b9a12e459caee036ba2b1d002ea"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "dbfebf36346ecf7631d1f11830ba8d33"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "d41d8cd98f00b204e9800998ecf8427e"
+}

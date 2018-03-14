@@ -1,0 +1,62 @@
+{
+  "deps_info": {
+    "deps_configs": [
+      "gen/third_party/auto/auto_service_java.build_config",
+      "gen/third_party/errorprone/errorprone_java.build_config"
+    ],
+    "gradle_treat_as_prebuilt": null,
+    "interface_jar_path": "lib.java/tools/android/errorprone_plugin/errorprone_plugin_java.interface.jar",
+    "is_prebuilt": false,
+    "jar_path": "lib.java/tools/android/errorprone_plugin/errorprone_plugin_java.jar",
+    "java_sources_file": "gen/tools/android/errorprone_plugin/errorprone_plugin_java.sources",
+    "javac_full_classpath": [
+      "../../third_party/errorprone/lib/error_prone_ant-2.2.0.jar",
+      "../../third_party/guava/lib/guava.jar",
+      "gen/third_party/auto/auto_common_java.javac.jar",
+      "gen/third_party/auto/auto_service_java.javac.jar"
+    ],
+    "javac_full_interface_classpath": [
+      "lib.java/third_party/errorprone/error_prone_ant-2.2.0.interface.jar",
+      "lib.java/third_party/guava/guava.interface.jar",
+      "lib.java/third_party/auto/auto_common_java.interface.jar",
+      "lib.java/third_party/auto/auto_service_java.interface.jar"
+    ],
+    "name": "errorprone_plugin_java.build_config",
+    "path": "gen/tools/android/errorprone_plugin/errorprone_plugin_java.build_config",
+    "requires_android": null,
+    "supports_android": null,
+    "type": "java_library",
+    "unprocessed_jar_path": "gen/tools/android/errorprone_plugin/errorprone_plugin_java.javac.jar"
+  },
+  "gradle": {
+    "bundled_srcjars": [],
+    "dependent_android_projects": [],
+    "dependent_java_projects": [
+      "gen/third_party/auto/auto_service_java.build_config"
+    ],
+    "dependent_prebuilt_jars": [
+      "lib.java/third_party/errorprone/error_prone_ant-2.2.0.jar"
+    ]
+  },
+  "javac": {
+    "classpath": [
+      "gen/third_party/auto/auto_service_java.javac.jar",
+      "../../third_party/errorprone/lib/error_prone_ant-2.2.0.jar"
+    ],
+    "interface_classpath": [
+      "lib.java/third_party/auto/auto_service_java.interface.jar",
+      "lib.java/third_party/errorprone/error_prone_ant-2.2.0.interface.jar"
+    ],
+    "processor_classes": [
+      "com.google.auto.service.processor.AutoServiceProcessor"
+    ],
+    "processor_classpath": [
+      "lib.java/third_party/auto/auto_service_processor.jar",
+      "lib.java/third_party/guava/guava.jar",
+      "lib.java/third_party/auto/auto_common_java.jar",
+      "lib.java/third_party/auto/auto_service_java.jar"
+    ],
+    "resource_packages": [],
+    "srcjars": []
+  }
+}

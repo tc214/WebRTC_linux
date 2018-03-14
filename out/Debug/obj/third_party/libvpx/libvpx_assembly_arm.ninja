@@ -1,0 +1,25 @@
+defines = -DV8_DEPRECATION_WARNINGS -DNO_TCMALLOC -DSAFE_BROWSING_DB_REMOTE -DCHROMIUM_BUILD -DFIELDTRIAL_TESTING_ENABLED -DANDROID -DHAVE_SYS_UIO_H -DANDROID_NDK_VERSION_ROLL=r16_1 -DCR_CLANG_REVISION=\"325667-1\" -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__GNU_SOURCE=1 -DCHROMIUM_CXX_TWEAK_INLINES -D_DEBUG -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DWTF_USE_DYNAMIC_ANNOTATIONS=1
+include_dirs = -Igen/third_party/libvpx/source/libvpx -I../.. -Igen -I../../third_party/libvpx/source/config -I../../third_party/libvpx/source/config/linux/arm-neon -I../../third_party/libvpx/source/libvpx
+asmflags = -mfpu=neon -fno-strict-aliasing --param=ssp-buffer-size=4 -fstack-protector -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -funwind-tables -fPIC -pipe -fcolor-diagnostics -no-canonical-prefixes -std=gnu11 -ffunction-sections -fno-short-enums --target=arm-linux-androideabi -isystem../../third_party/android_ndk/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -D__NDK_FPABI__= -DHAVE_PTHREAD_COND_TIMEDWAIT_MONOTONIC=1 -march=armv7-a -mfloat-abi=softfp -mtune=generic-armv7-a -gdwarf-3 -g1 -fdebug-info-for-profiling --sysroot=../../third_party/android_ndk/sysroot
+label_name = libvpx_assembly_arm
+root_out_dir = .
+target_out_dir = obj/third_party/libvpx
+target_output_name = libvpx_assembly_arm
+
+build obj/third_party/libvpx/libvpx_assembly_arm/idct4x4_1_add_neon.asm.o: asm gen/third_party/libvpx/source/libvpx/vpx_dsp/arm/idct4x4_1_add_neon.asm.S || obj/third_party/libvpx/convert_arm_assembly.stamp
+build obj/third_party/libvpx/libvpx_assembly_arm/idct4x4_add_neon.asm.o: asm gen/third_party/libvpx/source/libvpx/vpx_dsp/arm/idct4x4_add_neon.asm.S || obj/third_party/libvpx/convert_arm_assembly.stamp
+build obj/third_party/libvpx/libvpx_assembly_arm/idct_neon.asm.o: asm gen/third_party/libvpx/source/libvpx/vpx_dsp/arm/idct_neon.asm.S || obj/third_party/libvpx/convert_arm_assembly.stamp
+build obj/third_party/libvpx/libvpx_assembly_arm/intrapred_neon_asm.asm.o: asm gen/third_party/libvpx/source/libvpx/vpx_dsp/arm/intrapred_neon_asm.asm.S || obj/third_party/libvpx/convert_arm_assembly.stamp
+build obj/third_party/libvpx/libvpx_assembly_arm/loopfilter_16_neon.asm.o: asm gen/third_party/libvpx/source/libvpx/vpx_dsp/arm/loopfilter_16_neon.asm.S || obj/third_party/libvpx/convert_arm_assembly.stamp
+build obj/third_party/libvpx/libvpx_assembly_arm/loopfilter_4_neon.asm.o: asm gen/third_party/libvpx/source/libvpx/vpx_dsp/arm/loopfilter_4_neon.asm.S || obj/third_party/libvpx/convert_arm_assembly.stamp
+build obj/third_party/libvpx/libvpx_assembly_arm/loopfilter_8_neon.asm.o: asm gen/third_party/libvpx/source/libvpx/vpx_dsp/arm/loopfilter_8_neon.asm.S || obj/third_party/libvpx/convert_arm_assembly.stamp
+build obj/third_party/libvpx/libvpx_assembly_arm/save_reg_neon.asm.o: asm gen/third_party/libvpx/source/libvpx/vpx_dsp/arm/save_reg_neon.asm.S || obj/third_party/libvpx/convert_arm_assembly.stamp
+build obj/third_party/libvpx/libvpx_assembly_arm/vpx_convolve8_avg_neon_asm.asm.o: asm gen/third_party/libvpx/source/libvpx/vpx_dsp/arm/vpx_convolve8_avg_neon_asm.asm.S || obj/third_party/libvpx/convert_arm_assembly.stamp
+build obj/third_party/libvpx/libvpx_assembly_arm/vpx_convolve8_neon_asm.asm.o: asm gen/third_party/libvpx/source/libvpx/vpx_dsp/arm/vpx_convolve8_neon_asm.asm.S || obj/third_party/libvpx/convert_arm_assembly.stamp
+build obj/third_party/libvpx/libvpx_assembly_arm/vpx_convolve_avg_neon_asm.asm.o: asm gen/third_party/libvpx/source/libvpx/vpx_dsp/arm/vpx_convolve_avg_neon_asm.asm.S || obj/third_party/libvpx/convert_arm_assembly.stamp
+build obj/third_party/libvpx/libvpx_assembly_arm/vpx_convolve_copy_neon_asm.asm.o: asm gen/third_party/libvpx/source/libvpx/vpx_dsp/arm/vpx_convolve_copy_neon_asm.asm.S || obj/third_party/libvpx/convert_arm_assembly.stamp
+
+build obj/third_party/libvpx/libvpx_assembly_arm.a: alink obj/third_party/libvpx/libvpx_assembly_arm/idct4x4_1_add_neon.asm.o obj/third_party/libvpx/libvpx_assembly_arm/idct4x4_add_neon.asm.o obj/third_party/libvpx/libvpx_assembly_arm/idct_neon.asm.o obj/third_party/libvpx/libvpx_assembly_arm/intrapred_neon_asm.asm.o obj/third_party/libvpx/libvpx_assembly_arm/loopfilter_16_neon.asm.o obj/third_party/libvpx/libvpx_assembly_arm/loopfilter_4_neon.asm.o obj/third_party/libvpx/libvpx_assembly_arm/loopfilter_8_neon.asm.o obj/third_party/libvpx/libvpx_assembly_arm/save_reg_neon.asm.o obj/third_party/libvpx/libvpx_assembly_arm/vpx_convolve8_avg_neon_asm.asm.o obj/third_party/libvpx/libvpx_assembly_arm/vpx_convolve8_neon_asm.asm.o obj/third_party/libvpx/libvpx_assembly_arm/vpx_convolve_avg_neon_asm.asm.o obj/third_party/libvpx/libvpx_assembly_arm/vpx_convolve_copy_neon_asm.asm.o | ../../third_party/android_ndk/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/libgcc.a || obj/third_party/libvpx/convert_arm_assembly.stamp
+  arflags =
+  output_extension = .a
+  output_dir = obj/third_party/libvpx

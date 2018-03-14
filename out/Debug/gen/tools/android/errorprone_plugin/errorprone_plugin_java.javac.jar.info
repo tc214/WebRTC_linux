@@ -1,0 +1,2 @@
+org.chromium.tools.errorprone.plugin.NoSynchronizedThisCheck,../../tools/android/errorprone_plugin/src/org/chromium/tools/errorprone/plugin/NoSynchronizedThisCheck.java
+org.chromium.tools.errorprone.plugin.NoSynchronizedMethodCheck,../../tools/android/errorprone_plugin/src/org/chromium/tools/errorprone/plugin/NoSynchronizedMethodCheck.java

@@ -1,0 +1,179 @@
+{
+  "input-strings": [
+    "True", 
+    "True", 
+    "False", 
+    "26", 
+    "gen/rtc_base/base_java__lint/config.xml"
+  ], 
+  "files-md5": "bb278471a3f550a41a785c747a3fda8c", 
+  "input-files": [
+    {
+      "path": "../../third_party/android_tools/sdk/tools/bin/lint", 
+      "tag": "f8028c5b5957effc1f7d41a76b9312c5"
+    }, 
+    {
+      "path": "../../third_party/android_tools/sdk/platform-tools/api/api-versions.xml", 
+      "tag": "2dd802aa7c698f145d300183e741a0a9"
+    }, 
+    {
+      "path": "../../tools_webrtc/android/suppressions.xml", 
+      "tag": "3c9324bbe31d507df4f0d57718c4db82"
+    }, 
+    {
+      "path": "gen/rtc_base/base_java.javac.jar", 
+      "tag": "0c2ca051f077723512043f9d1e8e46b4", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 4034090902
+        }, 
+        {
+          "path": "org/webrtc/ContextUtils.class", 
+          "tag": 4121605286
+        }, 
+        {
+          "path": "org/webrtc/ThreadUtils$2.class", 
+          "tag": 3302404722
+        }, 
+        {
+          "path": "org/webrtc/Logging$1.class", 
+          "tag": 1915536545
+        }, 
+        {
+          "path": "org/webrtc/ThreadUtils$1.class", 
+          "tag": 4124738845
+        }, 
+        {
+          "path": "org/webrtc/ThreadUtils$ThreadChecker.class", 
+          "tag": 1173806025
+        }, 
+        {
+          "path": "org/webrtc/ThreadUtils$1Result.class", 
+          "tag": 3072654752
+        }, 
+        {
+          "path": "org/webrtc/Size.class", 
+          "tag": 1410559392
+        }, 
+        {
+          "path": "org/webrtc/Logging$Severity.class", 
+          "tag": 676802381
+        }, 
+        {
+          "path": "org/webrtc/Logging$TraceLevel.class", 
+          "tag": 2433551563
+        }, 
+        {
+          "path": "org/webrtc/ThreadUtils$3.class", 
+          "tag": 259069290
+        }, 
+        {
+          "path": "org/webrtc/ThreadUtils.class", 
+          "tag": 2478072093
+        }, 
+        {
+          "path": "org/webrtc/ThreadUtils$1CaughtException.class", 
+          "tag": 1740998105
+        }, 
+        {
+          "path": "org/webrtc/ThreadUtils$4.class", 
+          "tag": 539917031
+        }, 
+        {
+          "path": "org/webrtc/ThreadUtils$BlockingOperation.class", 
+          "tag": 1461468709
+        }, 
+        {
+          "path": "org/webrtc/Logging.class", 
+          "tag": 211939733
+        }
+      ]
+    }, 
+    {
+      "path": "../../rtc_base/java/src/org/webrtc/ContextUtils.java", 
+      "tag": "436182333ce5df76bf52427261e6414e"
+    }, 
+    {
+      "path": "../../rtc_base/java/src/org/webrtc/Logging.java", 
+      "tag": "9934f52a1b258173b8a1a77a2df143e9"
+    }, 
+    {
+      "path": "../../rtc_base/java/src/org/webrtc/Size.java", 
+      "tag": "ea759c58b67b732504cbfafb450c7aff"
+    }, 
+    {
+      "path": "../../rtc_base/java/src/org/webrtc/ThreadUtils.java", 
+      "tag": "2095644d4815a50eb41c7ed00aac1ecf"
+    }, 
+    {
+      "path": "../../build/android/gyp/lint.py", 
+      "tag": "5250034419fed9cb7b335bbe3569ee12"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "7d685a4951e7161683c633ab66ddd5a9"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "d9ec86c1d5580e7a62ef941378110757"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "a5ae0b9a12e459caee036ba2b1d002ea"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "dbfebf36346ecf7631d1f11830ba8d33"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "a96621ebb3848cadafd30c35ffa08573"
+}

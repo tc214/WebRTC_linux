@@ -1,0 +1,34 @@
+defines = -DHAVE_UNISTD_H -DHAVE_FCNTL_H -DFT2_BUILD_LIBRARY -DV8_DEPRECATION_WARNINGS -DNO_TCMALLOC -DSAFE_BROWSING_DB_REMOTE -DCHROMIUM_BUILD -DFIELDTRIAL_TESTING_ENABLED -DANDROID -DHAVE_SYS_UIO_H -DANDROID_NDK_VERSION_ROLL=r16_1 -DCR_CLANG_REVISION=\"325667-1\" -D__GNU_SOURCE=1 -DCHROMIUM_CXX_TWEAK_INLINES -D_DEBUG -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DWTF_USE_DYNAMIC_ANNOTATIONS=1 -DFT_CONFIG_CONFIG_H=\"freetype-custom-config/ftconfig.h\" -DFT_CONFIG_MODULES_H=\"freetype-custom-config/ftmodule.h\" -DFT_CONFIG_OPTIONS_H=\"freetype-custom-config/ftoption.h\" -DWITHOUT_HARFBUZZ -DCHROMIUM_RESTRICT_VISIBILITY
+include_dirs = -I../../third_party/freetype/include/freetype-custom-config -I../.. -Igen -I../../third_party/harfbuzz-ng/src -I../../third_party/freetype/include -I../../third_party/freetype/src/include -I../../third_party/libpng -I../../third_party/zlib
+cflags = -fno-strict-aliasing --param=ssp-buffer-size=4 -fstack-protector -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -funwind-tables -fPIC -pipe -fcolor-diagnostics -no-canonical-prefixes -ffunction-sections -fno-short-enums --target=arm-linux-androideabi -isystem../../third_party/android_ndk/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -D__NDK_FPABI__= -DHAVE_PTHREAD_COND_TIMEDWAIT_MONOTONIC=1 -march=armv7-a -mfloat-abi=softfp -mtune=generic-armv7-a -mfpu=neon -mthumb -Oz -fno-ident -fdata-sections -ffunction-sections -fomit-frame-pointer -gdwarf-3 -g1 -fdebug-info-for-profiling -fvisibility=hidden -Xclang -load -Xclang ../../third_party/llvm-build/Release+Asserts/lib/libFindBadConstructs.so -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang check-ipc -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Werror -Wall -Wno-unused-variable -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-covered-switch-default -Wno-unneeded-internal-declaration -Wno-inconsistent-missing-override -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-address-of-packed-member -Wno-unused-lambda-capture -Wno-user-defined-warnings -Wno-enum-compare-switch -Wno-null-pointer-arithmetic -Wno-unused-function
+cflags_c = -std=gnu11 --sysroot=../../third_party/android_ndk/sysroot
+label_name = freetype_source
+root_out_dir = .
+target_out_dir = obj/third_party/freetype
+target_output_name = freetype_source
+
+build obj/third_party/freetype/freetype_source/autofit.o: cc ../../third_party/freetype/src/src/autofit/autofit.c
+build obj/third_party/freetype/freetype_source/ftbase.o: cc ../../third_party/freetype/src/src/base/ftbase.c
+build obj/third_party/freetype/freetype_source/ftbbox.o: cc ../../third_party/freetype/src/src/base/ftbbox.c
+build obj/third_party/freetype/freetype_source/ftbitmap.o: cc ../../third_party/freetype/src/src/base/ftbitmap.c
+build obj/third_party/freetype/freetype_source/ftfntfmt.o: cc ../../third_party/freetype/src/src/base/ftfntfmt.c
+build obj/third_party/freetype/freetype_source/ftfstype.o: cc ../../third_party/freetype/src/src/base/ftfstype.c
+build obj/third_party/freetype/freetype_source/ftgasp.o: cc ../../third_party/freetype/src/src/base/ftgasp.c
+build obj/third_party/freetype/freetype_source/ftglyph.o: cc ../../third_party/freetype/src/src/base/ftglyph.c
+build obj/third_party/freetype/freetype_source/ftinit.o: cc ../../third_party/freetype/src/src/base/ftinit.c
+build obj/third_party/freetype/freetype_source/ftlcdfil.o: cc ../../third_party/freetype/src/src/base/ftlcdfil.c
+build obj/third_party/freetype/freetype_source/ftmm.o: cc ../../third_party/freetype/src/src/base/ftmm.c
+build obj/third_party/freetype/freetype_source/ftstroke.o: cc ../../third_party/freetype/src/src/base/ftstroke.c
+build obj/third_party/freetype/freetype_source/fttype1.o: cc ../../third_party/freetype/src/src/base/fttype1.c
+build obj/third_party/freetype/freetype_source/cff.o: cc ../../third_party/freetype/src/src/cff/cff.c
+build obj/third_party/freetype/freetype_source/ftgzip.o: cc ../../third_party/freetype/src/src/gzip/ftgzip.c
+build obj/third_party/freetype/freetype_source/psaux.o: cc ../../third_party/freetype/src/src/psaux/psaux.c
+build obj/third_party/freetype/freetype_source/pshinter.o: cc ../../third_party/freetype/src/src/pshinter/pshinter.c
+build obj/third_party/freetype/freetype_source/psnames.o: cc ../../third_party/freetype/src/src/psnames/psnames.c
+build obj/third_party/freetype/freetype_source/raster.o: cc ../../third_party/freetype/src/src/raster/raster.c
+build obj/third_party/freetype/freetype_source/sfnt.o: cc ../../third_party/freetype/src/src/sfnt/sfnt.c
+build obj/third_party/freetype/freetype_source/smooth.o: cc ../../third_party/freetype/src/src/smooth/smooth.c
+build obj/third_party/freetype/freetype_source/truetype.o: cc ../../third_party/freetype/src/src/truetype/truetype.c
+build obj/third_party/freetype/freetype_source/ftsystem.o: cc ../../third_party/freetype/src/builds/unix/ftsystem.c
+
+build obj/third_party/freetype/freetype_source.stamp: stamp obj/third_party/freetype/freetype_source/autofit.o obj/third_party/freetype/freetype_source/ftbase.o obj/third_party/freetype/freetype_source/ftbbox.o obj/third_party/freetype/freetype_source/ftbitmap.o obj/third_party/freetype/freetype_source/ftfntfmt.o obj/third_party/freetype/freetype_source/ftfstype.o obj/third_party/freetype/freetype_source/ftgasp.o obj/third_party/freetype/freetype_source/ftglyph.o obj/third_party/freetype/freetype_source/ftinit.o obj/third_party/freetype/freetype_source/ftlcdfil.o obj/third_party/freetype/freetype_source/ftmm.o obj/third_party/freetype/freetype_source/ftstroke.o obj/third_party/freetype/freetype_source/fttype1.o obj/third_party/freetype/freetype_source/cff.o obj/third_party/freetype/freetype_source/ftgzip.o obj/third_party/freetype/freetype_source/psaux.o obj/third_party/freetype/freetype_source/pshinter.o obj/third_party/freetype/freetype_source/psnames.o obj/third_party/freetype/freetype_source/raster.o obj/third_party/freetype/freetype_source/sfnt.o obj/third_party/freetype/freetype_source/smooth.o obj/third_party/freetype/freetype_source/truetype.o obj/third_party/freetype/freetype_source/ftsystem.o || obj/third_party/libpng/libpng.stamp obj/third_party/zlib/libchrome_zlib.a obj/third_party/libpng/libpng_sources.stamp obj/third_party/zlib/zlib_adler32_simd.stamp obj/third_party/zlib/zlib_arm_crc32.stamp obj/third_party/android_tools/cpu_features.stamp obj/third_party/zlib/zlib_inflate_chunk_simd.stamp obj/third_party/zlib/libzlib_x86_simd.a

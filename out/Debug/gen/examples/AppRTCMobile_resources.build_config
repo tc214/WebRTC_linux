@@ -1,0 +1,21 @@
+{
+  "deps_info": {
+    "deps_configs": [],
+    "name": "AppRTCMobile_resources.build_config",
+    "package_name": "org.appspot.apprtc",
+    "path": "gen/examples/AppRTCMobile_resources.build_config",
+    "r_text": "gen/examples/AppRTCMobile_resources_R.txt",
+    "resources_dirs": [
+      "../../examples/androidapp/res"
+    ],
+    "resources_zip": "resource_zips/examples/AppRTCMobile_resources.resources.zip",
+    "srcjar": "gen/examples/AppRTCMobile_resources.srcjar",
+    "type": "android_resources"
+  },
+  "gradle": {},
+  "resources": {
+    "dependency_zips": [],
+    "extra_package_names": [],
+    "extra_r_text_files": []
+  }
+}

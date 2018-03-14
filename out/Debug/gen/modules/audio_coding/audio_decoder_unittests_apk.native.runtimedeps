@@ -1,0 +1,4 @@
+./lib.unstripped/lib_audio_decoder_unittests__library.so
+../../resources/audio_coding/testfile32kHz.pcm
+../../testing/test_env.py
+icudtl.dat

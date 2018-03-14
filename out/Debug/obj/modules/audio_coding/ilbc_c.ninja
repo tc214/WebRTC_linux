@@ -1,0 +1,80 @@
+defines = -DV8_DEPRECATION_WARNINGS -DNO_TCMALLOC -DSAFE_BROWSING_DB_REMOTE -DCHROMIUM_BUILD -DFIELDTRIAL_TESTING_ENABLED -DANDROID -DHAVE_SYS_UIO_H -DANDROID_NDK_VERSION_ROLL=r16_1 -DCR_CLANG_REVISION=\"325667-1\" -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__GNU_SOURCE=1 -DCHROMIUM_CXX_TWEAK_INLINES -D_DEBUG -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DWTF_USE_DYNAMIC_ANNOTATIONS=1 -DWEBRTC_ENABLE_PROTOBUF=1 -DWEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE -DHAVE_SCTP -DUSE_BUILTIN_SW_CODECS -DWEBRTC_ARCH_ARM -DWEBRTC_ARCH_ARM_V7 -DWEBRTC_HAS_NEON -DWEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=1 -DWEBRTC_POSIX -DWEBRTC_LINUX -DWEBRTC_ANDROID
+include_dirs = -I../.. -Igen -I../../modules/audio_coding/codecs/ilbc/include -I../../common_audio/resampler/include -I../../common_audio/signal_processing/include -I../../common_audio/vad/include
+cflags = -fno-strict-aliasing --param=ssp-buffer-size=4 -fstack-protector -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -funwind-tables -fPIC -pipe -fcolor-diagnostics -no-canonical-prefixes -ffunction-sections -fno-short-enums --target=arm-linux-androideabi -isystem../../third_party/android_ndk/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -D__NDK_FPABI__= -DHAVE_PTHREAD_COND_TIMEDWAIT_MONOTONIC=1 -march=armv7-a -mfloat-abi=softfp -mtune=generic-armv7-a -mfpu=neon -mthumb -Wall -Werror -Wextra -Wimplicit-fallthrough -Wthread-safety -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-covered-switch-default -Wno-unneeded-internal-declaration -Wno-inconsistent-missing-override -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-address-of-packed-member -Wno-unused-lambda-capture -Wno-user-defined-warnings -Wno-enum-compare-switch -Wno-null-pointer-arithmetic -Oz -fno-ident -fdata-sections -ffunction-sections -fomit-frame-pointer -gdwarf-3 -g1 -fdebug-info-for-profiling -fvisibility=hidden -Xclang -load -Xclang ../../third_party/llvm-build/Release+Asserts/lib/libFindBadConstructs.so -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang check-ipc -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-strict-overflow -Wc++11-narrowing -Wimplicit-fallthrough -Wthread-safety -Winconsistent-missing-override -Wundef -Wunused-lambda-capture
+cflags_c = -std=gnu11 --sysroot=../../third_party/android_ndk/sysroot
+label_name = ilbc_c
+root_out_dir = .
+target_out_dir = obj/modules/audio_coding
+target_output_name = ilbc_c
+
+build obj/modules/audio_coding/ilbc_c/abs_quant.o: cc ../../modules/audio_coding/codecs/ilbc/abs_quant.c
+build obj/modules/audio_coding/ilbc_c/abs_quant_loop.o: cc ../../modules/audio_coding/codecs/ilbc/abs_quant_loop.c
+build obj/modules/audio_coding/ilbc_c/augmented_cb_corr.o: cc ../../modules/audio_coding/codecs/ilbc/augmented_cb_corr.c
+build obj/modules/audio_coding/ilbc_c/bw_expand.o: cc ../../modules/audio_coding/codecs/ilbc/bw_expand.c
+build obj/modules/audio_coding/ilbc_c/cb_construct.o: cc ../../modules/audio_coding/codecs/ilbc/cb_construct.c
+build obj/modules/audio_coding/ilbc_c/cb_mem_energy.o: cc ../../modules/audio_coding/codecs/ilbc/cb_mem_energy.c
+build obj/modules/audio_coding/ilbc_c/cb_mem_energy_augmentation.o: cc ../../modules/audio_coding/codecs/ilbc/cb_mem_energy_augmentation.c
+build obj/modules/audio_coding/ilbc_c/cb_mem_energy_calc.o: cc ../../modules/audio_coding/codecs/ilbc/cb_mem_energy_calc.c
+build obj/modules/audio_coding/ilbc_c/cb_search.o: cc ../../modules/audio_coding/codecs/ilbc/cb_search.c
+build obj/modules/audio_coding/ilbc_c/cb_search_core.o: cc ../../modules/audio_coding/codecs/ilbc/cb_search_core.c
+build obj/modules/audio_coding/ilbc_c/cb_update_best_index.o: cc ../../modules/audio_coding/codecs/ilbc/cb_update_best_index.c
+build obj/modules/audio_coding/ilbc_c/chebyshev.o: cc ../../modules/audio_coding/codecs/ilbc/chebyshev.c
+build obj/modules/audio_coding/ilbc_c/comp_corr.o: cc ../../modules/audio_coding/codecs/ilbc/comp_corr.c
+build obj/modules/audio_coding/ilbc_c/constants.o: cc ../../modules/audio_coding/codecs/ilbc/constants.c
+build obj/modules/audio_coding/ilbc_c/create_augmented_vec.o: cc ../../modules/audio_coding/codecs/ilbc/create_augmented_vec.c
+build obj/modules/audio_coding/ilbc_c/decode.o: cc ../../modules/audio_coding/codecs/ilbc/decode.c
+build obj/modules/audio_coding/ilbc_c/decode_residual.o: cc ../../modules/audio_coding/codecs/ilbc/decode_residual.c
+build obj/modules/audio_coding/ilbc_c/decoder_interpolate_lsf.o: cc ../../modules/audio_coding/codecs/ilbc/decoder_interpolate_lsf.c
+build obj/modules/audio_coding/ilbc_c/do_plc.o: cc ../../modules/audio_coding/codecs/ilbc/do_plc.c
+build obj/modules/audio_coding/ilbc_c/encode.o: cc ../../modules/audio_coding/codecs/ilbc/encode.c
+build obj/modules/audio_coding/ilbc_c/energy_inverse.o: cc ../../modules/audio_coding/codecs/ilbc/energy_inverse.c
+build obj/modules/audio_coding/ilbc_c/enh_upsample.o: cc ../../modules/audio_coding/codecs/ilbc/enh_upsample.c
+build obj/modules/audio_coding/ilbc_c/enhancer.o: cc ../../modules/audio_coding/codecs/ilbc/enhancer.c
+build obj/modules/audio_coding/ilbc_c/enhancer_interface.o: cc ../../modules/audio_coding/codecs/ilbc/enhancer_interface.c
+build obj/modules/audio_coding/ilbc_c/filtered_cb_vecs.o: cc ../../modules/audio_coding/codecs/ilbc/filtered_cb_vecs.c
+build obj/modules/audio_coding/ilbc_c/frame_classify.o: cc ../../modules/audio_coding/codecs/ilbc/frame_classify.c
+build obj/modules/audio_coding/ilbc_c/gain_dequant.o: cc ../../modules/audio_coding/codecs/ilbc/gain_dequant.c
+build obj/modules/audio_coding/ilbc_c/gain_quant.o: cc ../../modules/audio_coding/codecs/ilbc/gain_quant.c
+build obj/modules/audio_coding/ilbc_c/get_cd_vec.o: cc ../../modules/audio_coding/codecs/ilbc/get_cd_vec.c
+build obj/modules/audio_coding/ilbc_c/get_lsp_poly.o: cc ../../modules/audio_coding/codecs/ilbc/get_lsp_poly.c
+build obj/modules/audio_coding/ilbc_c/get_sync_seq.o: cc ../../modules/audio_coding/codecs/ilbc/get_sync_seq.c
+build obj/modules/audio_coding/ilbc_c/hp_input.o: cc ../../modules/audio_coding/codecs/ilbc/hp_input.c
+build obj/modules/audio_coding/ilbc_c/hp_output.o: cc ../../modules/audio_coding/codecs/ilbc/hp_output.c
+build obj/modules/audio_coding/ilbc_c/ilbc.o: cc ../../modules/audio_coding/codecs/ilbc/ilbc.c
+build obj/modules/audio_coding/ilbc_c/index_conv_dec.o: cc ../../modules/audio_coding/codecs/ilbc/index_conv_dec.c
+build obj/modules/audio_coding/ilbc_c/index_conv_enc.o: cc ../../modules/audio_coding/codecs/ilbc/index_conv_enc.c
+build obj/modules/audio_coding/ilbc_c/init_decode.o: cc ../../modules/audio_coding/codecs/ilbc/init_decode.c
+build obj/modules/audio_coding/ilbc_c/init_encode.o: cc ../../modules/audio_coding/codecs/ilbc/init_encode.c
+build obj/modules/audio_coding/ilbc_c/interpolate.o: cc ../../modules/audio_coding/codecs/ilbc/interpolate.c
+build obj/modules/audio_coding/ilbc_c/interpolate_samples.o: cc ../../modules/audio_coding/codecs/ilbc/interpolate_samples.c
+build obj/modules/audio_coding/ilbc_c/lpc_encode.o: cc ../../modules/audio_coding/codecs/ilbc/lpc_encode.c
+build obj/modules/audio_coding/ilbc_c/lsf_check.o: cc ../../modules/audio_coding/codecs/ilbc/lsf_check.c
+build obj/modules/audio_coding/ilbc_c/lsf_interpolate_to_poly_dec.o: cc ../../modules/audio_coding/codecs/ilbc/lsf_interpolate_to_poly_dec.c
+build obj/modules/audio_coding/ilbc_c/lsf_interpolate_to_poly_enc.o: cc ../../modules/audio_coding/codecs/ilbc/lsf_interpolate_to_poly_enc.c
+build obj/modules/audio_coding/ilbc_c/lsf_to_lsp.o: cc ../../modules/audio_coding/codecs/ilbc/lsf_to_lsp.c
+build obj/modules/audio_coding/ilbc_c/lsf_to_poly.o: cc ../../modules/audio_coding/codecs/ilbc/lsf_to_poly.c
+build obj/modules/audio_coding/ilbc_c/lsp_to_lsf.o: cc ../../modules/audio_coding/codecs/ilbc/lsp_to_lsf.c
+build obj/modules/audio_coding/ilbc_c/my_corr.o: cc ../../modules/audio_coding/codecs/ilbc/my_corr.c
+build obj/modules/audio_coding/ilbc_c/nearest_neighbor.o: cc ../../modules/audio_coding/codecs/ilbc/nearest_neighbor.c
+build obj/modules/audio_coding/ilbc_c/pack_bits.o: cc ../../modules/audio_coding/codecs/ilbc/pack_bits.c
+build obj/modules/audio_coding/ilbc_c/poly_to_lsf.o: cc ../../modules/audio_coding/codecs/ilbc/poly_to_lsf.c
+build obj/modules/audio_coding/ilbc_c/poly_to_lsp.o: cc ../../modules/audio_coding/codecs/ilbc/poly_to_lsp.c
+build obj/modules/audio_coding/ilbc_c/refiner.o: cc ../../modules/audio_coding/codecs/ilbc/refiner.c
+build obj/modules/audio_coding/ilbc_c/simple_interpolate_lsf.o: cc ../../modules/audio_coding/codecs/ilbc/simple_interpolate_lsf.c
+build obj/modules/audio_coding/ilbc_c/simple_lpc_analysis.o: cc ../../modules/audio_coding/codecs/ilbc/simple_lpc_analysis.c
+build obj/modules/audio_coding/ilbc_c/simple_lsf_dequant.o: cc ../../modules/audio_coding/codecs/ilbc/simple_lsf_dequant.c
+build obj/modules/audio_coding/ilbc_c/simple_lsf_quant.o: cc ../../modules/audio_coding/codecs/ilbc/simple_lsf_quant.c
+build obj/modules/audio_coding/ilbc_c/smooth.o: cc ../../modules/audio_coding/codecs/ilbc/smooth.c
+build obj/modules/audio_coding/ilbc_c/smooth_out_data.o: cc ../../modules/audio_coding/codecs/ilbc/smooth_out_data.c
+build obj/modules/audio_coding/ilbc_c/sort_sq.o: cc ../../modules/audio_coding/codecs/ilbc/sort_sq.c
+build obj/modules/audio_coding/ilbc_c/split_vq.o: cc ../../modules/audio_coding/codecs/ilbc/split_vq.c
+build obj/modules/audio_coding/ilbc_c/state_construct.o: cc ../../modules/audio_coding/codecs/ilbc/state_construct.c
+build obj/modules/audio_coding/ilbc_c/state_search.o: cc ../../modules/audio_coding/codecs/ilbc/state_search.c
+build obj/modules/audio_coding/ilbc_c/swap_bytes.o: cc ../../modules/audio_coding/codecs/ilbc/swap_bytes.c
+build obj/modules/audio_coding/ilbc_c/unpack_bits.o: cc ../../modules/audio_coding/codecs/ilbc/unpack_bits.c
+build obj/modules/audio_coding/ilbc_c/vq3.o: cc ../../modules/audio_coding/codecs/ilbc/vq3.c
+build obj/modules/audio_coding/ilbc_c/vq4.o: cc ../../modules/audio_coding/codecs/ilbc/vq4.c
+build obj/modules/audio_coding/ilbc_c/window32_w32.o: cc ../../modules/audio_coding/codecs/ilbc/window32_w32.c
+build obj/modules/audio_coding/ilbc_c/xcorr_coef.o: cc ../../modules/audio_coding/codecs/ilbc/xcorr_coef.c
+
+build obj/modules/audio_coding/ilbc_c.stamp: stamp obj/modules/audio_coding/ilbc_c/abs_quant.o obj/modules/audio_coding/ilbc_c/abs_quant_loop.o obj/modules/audio_coding/ilbc_c/augmented_cb_corr.o obj/modules/audio_coding/ilbc_c/bw_expand.o obj/modules/audio_coding/ilbc_c/cb_construct.o obj/modules/audio_coding/ilbc_c/cb_mem_energy.o obj/modules/audio_coding/ilbc_c/cb_mem_energy_augmentation.o obj/modules/audio_coding/ilbc_c/cb_mem_energy_calc.o obj/modules/audio_coding/ilbc_c/cb_search.o obj/modules/audio_coding/ilbc_c/cb_search_core.o obj/modules/audio_coding/ilbc_c/cb_update_best_index.o obj/modules/audio_coding/ilbc_c/chebyshev.o obj/modules/audio_coding/ilbc_c/comp_corr.o obj/modules/audio_coding/ilbc_c/constants.o obj/modules/audio_coding/ilbc_c/create_augmented_vec.o obj/modules/audio_coding/ilbc_c/decode.o obj/modules/audio_coding/ilbc_c/decode_residual.o obj/modules/audio_coding/ilbc_c/decoder_interpolate_lsf.o obj/modules/audio_coding/ilbc_c/do_plc.o obj/modules/audio_coding/ilbc_c/encode.o obj/modules/audio_coding/ilbc_c/energy_inverse.o obj/modules/audio_coding/ilbc_c/enh_upsample.o obj/modules/audio_coding/ilbc_c/enhancer.o obj/modules/audio_coding/ilbc_c/enhancer_interface.o obj/modules/audio_coding/ilbc_c/filtered_cb_vecs.o obj/modules/audio_coding/ilbc_c/frame_classify.o obj/modules/audio_coding/ilbc_c/gain_dequant.o obj/modules/audio_coding/ilbc_c/gain_quant.o obj/modules/audio_coding/ilbc_c/get_cd_vec.o obj/modules/audio_coding/ilbc_c/get_lsp_poly.o obj/modules/audio_coding/ilbc_c/get_sync_seq.o obj/modules/audio_coding/ilbc_c/hp_input.o obj/modules/audio_coding/ilbc_c/hp_output.o obj/modules/audio_coding/ilbc_c/ilbc.o obj/modules/audio_coding/ilbc_c/index_conv_dec.o obj/modules/audio_coding/ilbc_c/index_conv_enc.o obj/modules/audio_coding/ilbc_c/init_decode.o obj/modules/audio_coding/ilbc_c/init_encode.o obj/modules/audio_coding/ilbc_c/interpolate.o obj/modules/audio_coding/ilbc_c/interpolate_samples.o obj/modules/audio_coding/ilbc_c/lpc_encode.o obj/modules/audio_coding/ilbc_c/lsf_check.o obj/modules/audio_coding/ilbc_c/lsf_interpolate_to_poly_dec.o obj/modules/audio_coding/ilbc_c/lsf_interpolate_to_poly_enc.o obj/modules/audio_coding/ilbc_c/lsf_to_lsp.o obj/modules/audio_coding/ilbc_c/lsf_to_poly.o obj/modules/audio_coding/ilbc_c/lsp_to_lsf.o obj/modules/audio_coding/ilbc_c/my_corr.o obj/modules/audio_coding/ilbc_c/nearest_neighbor.o obj/modules/audio_coding/ilbc_c/pack_bits.o obj/modules/audio_coding/ilbc_c/poly_to_lsf.o obj/modules/audio_coding/ilbc_c/poly_to_lsp.o obj/modules/audio_coding/ilbc_c/refiner.o obj/modules/audio_coding/ilbc_c/simple_interpolate_lsf.o obj/modules/audio_coding/ilbc_c/simple_lpc_analysis.o obj/modules/audio_coding/ilbc_c/simple_lsf_dequant.o obj/modules/audio_coding/ilbc_c/simple_lsf_quant.o obj/modules/audio_coding/ilbc_c/smooth.o obj/modules/audio_coding/ilbc_c/smooth_out_data.o obj/modules/audio_coding/ilbc_c/sort_sq.o obj/modules/audio_coding/ilbc_c/split_vq.o obj/modules/audio_coding/ilbc_c/state_construct.o obj/modules/audio_coding/ilbc_c/state_search.o obj/modules/audio_coding/ilbc_c/swap_bytes.o obj/modules/audio_coding/ilbc_c/unpack_bits.o obj/modules/audio_coding/ilbc_c/vq3.o obj/modules/audio_coding/ilbc_c/vq4.o obj/modules/audio_coding/ilbc_c/window32_w32.o obj/modules/audio_coding/ilbc_c/xcorr_coef.o || obj/typedefs.stamp obj/libwebrtc_common.a obj/api/audio_codecs/audio_codecs_api.stamp obj/common_audio/libcommon_audio.a obj/common_audio/common_audio_c.stamp obj/rtc_base/checks.stamp obj/rtc_base/rtc_base_approved.stamp obj/rtc_base/sanitizer.stamp obj/api/array_view.stamp obj/rtc_base/safe_compare.stamp obj/rtc_base/type_traits.stamp obj/api/optional.stamp obj/rtc_base/deprecation.stamp obj/rtc_base/stringutils.stamp obj/rtc_base/rtc_base_approved_generic.stamp obj/common_audio/common_audio_c_arm_asm.stamp obj/system_wrappers/asm_defines.stamp obj/common_audio/common_audio_cc.stamp obj/system_wrappers/libsystem_wrappers.a obj/system_wrappers/cpu_features_api.stamp obj/system_wrappers/field_trial_api.stamp obj/system_wrappers/metrics_api.stamp obj/system_wrappers/runtime_enabled_features_api.stamp obj/modules/module_api_public.stamp obj/system_wrappers/libcpu_features_android.a obj/third_party/android_tools/cpu_features.stamp obj/rtc_base/librtc_numerics.a obj/rtc_base/compile_assert_c.stamp obj/common_audio/sinc_resampler.stamp obj/rtc_base/gtest_prod.stamp obj/third_party/openmax_dl/dl/libdl.a obj/third_party/openmax_dl/dl/libopenmax_dl_armv7.a obj/third_party/openmax_dl/dl/libopenmax_dl_neon.a obj/common_audio/libcommon_audio_neon.a obj/common_audio/common_audio_neon_c.stamp obj/common_audio/fir_filter.stamp

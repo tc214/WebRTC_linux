@@ -1,0 +1,12 @@
+./lib.unstripped/lib_modules_tests__library.so
+../../resources/audio_coding/testfile32kHz.pcm
+../../resources/audio_coding/teststereo32kHz.pcm
+../../resources/foreman_cif.yuv
+../../resources/paris_qcif.yuv
+../../resources/ConferenceMotion_1280_720_50.yuv
+../../resources/foreman_128x96.yuv
+../../resources/foreman_160x120.yuv
+../../resources/foreman_176x144.yuv
+../../resources/foreman_320x240.yuv
+../../testing/test_env.py
+icudtl.dat

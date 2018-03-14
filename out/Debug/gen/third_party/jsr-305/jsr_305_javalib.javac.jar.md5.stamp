@@ -1,0 +1,253 @@
+{
+  "input-strings": [
+    "/usr/bin/javac", 
+    "-g", 
+    "-encoding", 
+    "UTF-8", 
+    "-sourcepath", 
+    ":", 
+    "-source", 
+    "1.8", 
+    "-target", 
+    "1.8", 
+    "-XDignore.symbol.file", 
+    "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar", 
+    "lib.java/build/android/buildhooks/build_hooks_java.interface.jar"
+  ], 
+  "files-md5": "2a12f43f46e6e4cef2a38dc65793de25", 
+  "input-files": [
+    {
+      "path": "/usr/bin/javac", 
+      "tag": "332f4fb39f9964c829ef77e17178fda5"
+    }, 
+    {
+      "path": "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar", 
+      "tag": "4cea7523c856c6112307327d27568c2e"
+    }, 
+    {
+      "path": "lib.java/build/android/buildhooks/build_hooks_java.interface.jar", 
+      "tag": "7d63b679f65b2a685de5dcd52fbf16c3"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/PropertyKey.java", 
+      "tag": "0430caaf5c2f9ad95a1fea7b1b6bfdf0"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/CheckForSigned.java", 
+      "tag": "d6d470f8bc2861fd741e1b50b949479f"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/Detainted.java", 
+      "tag": "1a4c0f7358a4931bdfa5d7c7f8b10888"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/Untainted.java", 
+      "tag": "e375bf1b199693a96125af579812a4eb"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/Signed.java", 
+      "tag": "9f2cdb39029cd4708758f112455a3683"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/Nonnull.java", 
+      "tag": "64031dc1166297619488ba3bf2dde38d"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/Nullable.java", 
+      "tag": "6c88bce90a088d2bef8aa4435800224e"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/ParametersAreNullableByDefault.java", 
+      "tag": "7099146f3c03d049a984e17f9183e70b"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/OverridingMethodsMustInvokeSuper.java", 
+      "tag": "d2d13e66cab97682e7b5b4d99d5b689f"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/Tainted.java", 
+      "tag": "170e0786c96f141eedc873ee8d088ad5"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/CheckReturnValue.java", 
+      "tag": "dd3f65ad58d85bf72ae252220cc12c9b"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/Nonnegative.java", 
+      "tag": "8cd2053344369579653edc31d0169251"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/WillCloseWhenClosed.java", 
+      "tag": "23fd50ddb5fc123de421f15706f7224e"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/RegEx.java", 
+      "tag": "6ce41ae2a8bc0a621585dc2cecb2db75"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/Syntax.java", 
+      "tag": "616f5524a8304d9140d86a9a5c020f75"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/meta/TypeQualifierValidator.java", 
+      "tag": "18850d9fef9122f6ea57a22c63584e94"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/meta/Exclusive.java", 
+      "tag": "9a68bf6f4577b7c72f8ea6b808bbacb2"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/meta/Exhaustive.java", 
+      "tag": "1728dfb4571832467c177b1cdba31a73"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/meta/TypeQualifier.java", 
+      "tag": "74a278fb881181facdd97f85bdb207e3"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/meta/TypeQualifierNickname.java", 
+      "tag": "f79fae79c2427da21bed220588df4ffd"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/meta/TypeQualifierDefault.java", 
+      "tag": "c35136356821d600851221e0922b0bef"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/meta/When.java", 
+      "tag": "e0ec653d7dc06396e8066c9c90248502"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/CheckForNull.java", 
+      "tag": "95818ba392214e456101d8a63cce2775"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/MatchesPattern.java", 
+      "tag": "2e0cb09a600af24b07dbaaf0c03ed950"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/concurrent/Immutable.java", 
+      "tag": "01414069dfd78f715bc6dcf1d08e2c78"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/concurrent/NotThreadSafe.java", 
+      "tag": "cd9afea2fc41b63a032c2f64dd54fb55"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/concurrent/ThreadSafe.java", 
+      "tag": "0f672e08b30c7a395bed4d394f853115"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/concurrent/GuardedBy.java", 
+      "tag": "05d02b1313d253e411904826ef80c3c4"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/ParametersAreNonnullByDefault.java", 
+      "tag": "eccf694ab886a7e1cce5dd5cb721e987"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/WillClose.java", 
+      "tag": "4a0fda04c6a5039c0a04537d9d13eea1"
+    }, 
+    {
+      "path": "../../third_party/jsr-305/src/ri/src/main/java/javax/annotation/WillNotClose.java", 
+      "tag": "dd44aff3c5d0fedabc6395fc1051b161"
+    }, 
+    {
+      "path": "../../build/android/gyp/jar.py", 
+      "tag": "d9fdd688e373e4996db890d165666bbe"
+    }, 
+    {
+      "path": "../../build/android/gyp/javac.py", 
+      "tag": "9bf4dbe596bca12cdcbace9647455ef0"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "7d685a4951e7161683c633ab66ddd5a9"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "d9ec86c1d5580e7a62ef941378110757"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "a5ae0b9a12e459caee036ba2b1d002ea"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "dbfebf36346ecf7631d1f11830ba8d33"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/__init__.py", 
+      "tag": "de647b90a4b99c279f3e4e358ea39b3e"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/ansi.py", 
+      "tag": "3ad189643bf1b70eb5be73153569c26c"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/ansitowin32.py", 
+      "tag": "9b39fc8f8d1af5b00161ed93f037176b"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/initialise.py", 
+      "tag": "91141f9b74377895dae6f33b6de5cca8"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/win32.py", 
+      "tag": "e6ef5597c899deefd23e628b209763dd"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/winterm.py", 
+      "tag": "9d0c650cd287ccf58d29894feec2178f"
+    }
+  ], 
+  "strings-md5": "a525cdc6d86c07efb05321f21ef43b27"
+}

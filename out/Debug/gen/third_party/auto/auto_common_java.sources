@@ -1,0 +1,8 @@
+../../third_party/auto/src/common/src/main/java/com/google/auto/common/AnnotationMirrors.java
+../../third_party/auto/src/common/src/main/java/com/google/auto/common/BasicAnnotationProcessor.java
+../../third_party/auto/src/common/src/main/java/com/google/auto/common/MoreTypes.java
+../../third_party/auto/src/common/src/main/java/com/google/auto/common/SuperficialValidation.java
+../../third_party/auto/src/common/src/main/java/com/google/auto/common/AnnotationValues.java
+../../third_party/auto/src/common/src/main/java/com/google/auto/common/MoreElements.java
+../../third_party/auto/src/common/src/main/java/com/google/auto/common/Overrides.java
+../../third_party/auto/src/common/src/main/java/com/google/auto/common/Visibility.java

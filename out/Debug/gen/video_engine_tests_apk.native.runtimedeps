@@ -1,0 +1,5 @@
+./lib.unstripped/lib_video_engine_tests__library.so
+../../resources/foreman_cif_short.yuv
+../../resources/voice_engine/audio_long16.pcm
+../../testing/test_env.py
+icudtl.dat
